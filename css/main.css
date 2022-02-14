@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
 
 body {
-  background-color: yellow;
+  
 }
 
 .image {
@@ -15,4 +15,8 @@ body {
 
 p {
   font-family: 'Gloria Hallelujah', cursive;
+  left: 300px;
+  top: 90px;
+  position: relative;
+  font-size: 1.5em;
 }
