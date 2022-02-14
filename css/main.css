@@ -4,6 +4,10 @@ body {
   background-color: #F8F5ED;
 }
 
+.story {
+  display: flex;
+}
+
 .image {
   display: flex;
   justify-content: center;
