@@ -1,0 +1,12 @@
+body {
+  background-color: yellow;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+}
+
+#background_image {
+  width: 500px;
+}
