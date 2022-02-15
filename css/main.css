@@ -40,6 +40,11 @@ div#screen {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 100;
+  }
+
+  a:visited, a:link {
+    color: black;
   }
 
   div#right {
@@ -55,4 +60,20 @@ div#screen {
   .label {
     margin: 0;
     font-size: 90%;
+  }
+
+  img#image1 {
+    position: absolute;
+    z-index: 0;
+  }
+
+  img#image2 {
+    position: absolute;
+    z-index: 1;
+  }
+
+  p#story1, p#story2 {
+    position: absolute;
+    width: 50%;
+    z-index: 50;
   }
