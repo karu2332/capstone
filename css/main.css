@@ -64,12 +64,17 @@ div#screen {
 
   img#image1 {
     position: absolute;
-    z-index: 0;
+    z-index: 1;
   }
 
   img#image2 {
     position: absolute;
-    z-index: 1;
+    z-index: 2;
+  }
+
+  img#image3 {
+    position: absolute;
+    z-index: 3;
   }
 
   p#story1, p#story2 {
