@@ -4,20 +4,42 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="css/main.css">
   <title>Make Your Mark</title>
+  <style>
+    img#image1 {
+      max-width: 65%;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 0;
+    }
+
+    p#story1 {
+      width: 50%;
+      position: absolute;
+      top: 1%;
+      left: 9%;
+      z-index: 1;
+    }
+  </style>
 </head>
 <body>
-
-  <main>
-    <div class=story>
-      <p>At DayDream Elementary school,<br> the classrooms are filled with<br> laughter, art, and imagination.</p>
-    </div>
-    <div class=image>
-      <img id="background_image" src="img/school_confetti.png" alt="school">
-    </div>
-    <div class="next_button">
-        <img id="fast_forward" src="img/fast_forward.png" alt="next">
+  <div id="screen">
+    <div id="left">
+        <img src="img/house.png" alt="Home">
+        <div class="label">Home</div>
     </div>
 
-  </main>
+    <div id="right">
+        <img src="img/fast_forward.png" alt="Next">
+        <div class="label">Next</div>
+    </div>
+
+    <main>
+      <img id="image1" src="img/school_confetti_blueroad.png" alt="School">
+      <p id="story1">At DayDream Elementary school,<br> the classrooms are filled with<br> laughter, art, and imagination.</p>
+
+    </main>
+  </div>
 </body>
 </html>

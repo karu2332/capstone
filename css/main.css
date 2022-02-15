@@ -6,6 +6,7 @@ html, body {
   width: 100%;
   height: 100%;
   font-family: 'Gloria Hallelujah', cursive;
+  font-size: 120%;
 }
 
 img {
@@ -31,7 +32,7 @@ div#screen {
     height: 100%;
   }
 
-  div#home, div#next, div#back, div#go {
+  div#left, div#right {
     width: 6%;
     height: 8%;
     position: absolute;
@@ -41,29 +42,17 @@ div#screen {
     align-items: center;
   }
 
-  div#home {
-    left: 8%;
-    bottom: 8%;
-    display: none;
-  }
-
-  div#next {
+  div#right {
     right: 8%;
     bottom: 8%;
   }
 
-  div#back {
+  div#left {
     left: 8%;
     bottom: 8%;
-  }
-
-  div#go {
-    right: 8%;
-    bottom: 8%;
-    display: none;
   }
 
   .label {
     margin: 0;
-    font-size: 120%;
+    font-size: 90%;
   }
