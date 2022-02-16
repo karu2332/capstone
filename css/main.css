@@ -23,7 +23,7 @@ section #right {
   width: 15%;
 }
 
-#home {
+#back {
   max-width: 67%;
   margin-top: 460%;
   margin-left: 60%;
@@ -35,7 +35,7 @@ section #right {
   margin-left: -60%;
 }
 
-#text_home {
+#text_previous {
   margin-top: -20%;
   margin-left: 75%;
 }
@@ -43,10 +43,6 @@ section #right {
 #text_next {
   margin-top: -20%;
   margin-left: -45%
-}
-
-#story {
-  margin-top: -60%;
 }
 
 a {
