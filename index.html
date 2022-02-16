@@ -5,41 +5,34 @@
   <link rel="stylesheet" href="css/main.css">
   <title>Make Your Mark</title>
   <style>
-    img#image1 {
-      max-width: 65%;
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
+
+    #school {
+      max-width: 85%;
+      margin-left: 10%;
+      margin-top: 2%;
     }
 
-    p#story1 {
-      width: 50%;
-      position: absolute;
-      top: 1%;
-      left: 15%;
+    #story {
+      margin-top: -60%;
     }
   </style>
 </head>
 <body>
-  <div id="screen">
-    <div id="left">
-        <img src="img/house.png" alt="Home">
-        <div class="label">Home</div>
-    </div>
-
-    <a href="index2.html"><div id="right">
-        <img src="img/fast_forward.png" alt="Next">
-        <div class="label">Next</div>
-    </div></a>
-
     <main>
-      <img id="image1" src="img/school_confetti_blueroad.png" alt="School">
-      <p id="story1">
-        At DayDream Elementary school,<br> the classrooms are filled with<br> laughter, art, and imagination.
-      </p>
+      <a href="index.html"><section id="left">
+        <img id="home" src="img/house.png" alt="Home">
+        <p id="text_home">Home</p>
+      </section></a>
 
+      <section id="content">
+        <img id="school" src="img/school_confetti_blueroad.png" alt="School">
+        <p id="story">At DayDream Elementary school,<br> the classrooms are filled with<br> laughter, art, and imagination.</p>
+      </section>
+
+      <a href="index2.html"><section id="right">
+        <img id="next" src="img/fast_forward.png" alt="Next">
+        <p id="text_next">Next</p>
+      </section></a>
     </main>
-  </div>
 </body>
 </html>
