@@ -5,40 +5,37 @@
   <link rel="stylesheet" href="css/main.css">
   <title>Make Your Mark</title>
   <style>
-    img#image1 {
-      position: absolute;
-      max-width: 75%;
-      top: 17%;
-      left: 55%;
-      transform: translateX(-50%);
+    #art_supplies {
+      max-width: 80%;
+      margin-left: 10%;
+      margin-top: 7%;
     }
 
-    p#story1 {
-      left: 15%;
-      bottom: 66%;
+    #story {
+      margin-top: -60%;
+      margin-left: 10%;
     }
 
   </style>
 </head>
 <body>
-  <div id="screen">
-    <a href="index2.html"><div id="left">
-        <img src="img/rewind.png" alt="Back">
-        <div class="label">Back</div>
-    </div></a>
-
-    <a href="index4.html"><div id="right">
-        <img src="img/fast_forward.png" alt="Next">
-        <div class="label">Next</div>
-    </div><a>
-
     <main>
-      <img id="image1" src="img/art_supplies.png" alt="Art Supplies">
-      <p id="story1">
-        Everyday the kids use their markers,<br>and paint brushes,<br>and crayons,<br>and colored pencils.
-      </p>
+      <a href="index2.html"><section id="left">
+        <img id="back" src="img/rewind.png" alt="Back">
+        <p id="text_previous">Back</p>
+      </section></a>
 
+      <section id="content">
+        <img id="art_supplies" src="img/art_supplies.png" alt="Art Supplies">
+        <p id="story">
+          Everyday the kids use their markers,<br> and paint brushes,<br> and crayons,<br>and colored pencils.
+        </p>
+      </section>
+
+      <a href="index4.html"><section id="right">
+        <img id="next" src="img/fast_forward.png" alt="Next">
+        <p id="text_next">Next</p>
+      </section></a>
     </main>
-  </div>
 </body>
 </html>
