@@ -5,73 +5,52 @@
   <link rel="stylesheet" href="css/main.css">
   <title>Make Your Mark</title>
   <style>
-    img#image1_1 {
-      position: absolute;
-      max-width: 66%;
-      top: -36%;
-      opacity: 0.3;
-      left: 66%;
-      transform: translateX(-50%);
+    #open_desk {
+      max-width: 80%;
+      margin-left: 10%;
+      margin-top: 7%;
+      z-index: 2;
     }
 
-    img#image1_2 {
-      position: absolute;
-      max-width: 66%;
-      top: -10%;
-      opacity: 0.3;
-      left: 90%;
-      transform: translateX(-50%);
+    #closed_desk {
+      max-width: 75%;
+      margin-top: -20%;
     }
 
-    img#image2 {
-      max-width: 66%;
-      bottom: -3%;
-      left: 38%;
+    #story_1 {
+      margin-top: -60%;
+      margin-left: 10%;
     }
 
-    img#image3 {
-      max-width: 62%;
-      bottom: 5%;
-      left: 22%;
-    }
-
-    p#story1 {
-      left: 15%;
-      bottom: 62%;
-    }
-
-    p#story2 {
-      left: 15%;
-      bottom: 25%;
+    #story_2 {
+      margin-top: 20%;
+      margin-left: 9%;
     }
 
   </style>
 </head>
 <body>
-  <div id="screen">
-    <a href="index3.html"><div id="left">
-        <img src="img/rewind.png" alt="Back">
-        <div class="label">Back</div>
-    </div></a>
-
-    <a href="index5.html"><div id="right">
-        <img src="img/fast_forward.png" alt="Next">
-        <div class="label">Next</div>
-    </div><a>
-
     <main>
-      <img id="image1_1" src="img/desk_closed.png" alt="Desk Closed">
-      <img id="image1_2" src="img/desk_closed.png" alt="Desk Closed">
-      <img id="image2" src="img/charlottes_desk_full.png" alt="Charlotte's Desk (Full)">
-      <img id="image3" src="img/charlotte_standing.png" alt="Charlotte">
-      <p id="story1">
-        Charlotte loves to draw with<br> her colorful markers<br> and paint with her<br> prickly paint brushes.
-      </p>
-      <p id="story2">
-        Her desk has the<br> most art supplies<br> in the entire school.
-      </p>
+      <a href="index3.html"><section id="left">
+        <img id="back" src="img/rewind.png" alt="Back">
+        <p id="text_previous">Back</p>
+      </section></a>
 
+      <section id="content">
+        <img id="closed_desk" src="img/desk_closed.png" alt="Closed Desk">
+        <img id="open_desk" src="img/charlottes_desk_full.png" alt="Art Supplies">
+        <p id="story_1">
+          Charlotte loves to draw with<br> her colorful markers<br> and paint with her<br> prickly paint brushes.
+        </p>
+        <p id="story_2">
+          Her desk has the<br> most art supplies<br> in the entire school.
+        </p>
+      </section>
+
+      <a href="index5.html"><section id="right">
+        <img id="next" src="img/fast_forward.png" alt="Next">
+        <p id="text_next">Next</p>
+      </section></a>
     </main>
-  </div>
 </body>
 </html>

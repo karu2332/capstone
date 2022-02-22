@@ -1,54 +1,170 @@
 @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
-
 html {
-background-color: #F8F5ED;
-overflow: hidden;
+    background-color: #f8f5ed;
+    overflow: hidden;
 }
-
+body {
+    margin: 0;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 2vw;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
 main {
-  display: flex;
-  font-family: 'Gloria Hallelujah', cursive;
-  font-size: 120%;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+.content {
+    flex: 80%;
+    display: grid;
+}
+.navcontainer {
+    flex: 10%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+nav {
+    max-width: 50%;
+    margin-bottom: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+nav p {
+    font-size: 1.5vw;
+    margin: 0;
+}
+@media (orientation: portrait) {
+    main {
+        flex-wrap: wrap;
+    }
+    .content {
+        order: 1;
+        flex: 100%;
+        height: 80%;
+    }
+    .navcontainer {
+        order: 2;
+        flex: 50%;
+        height: 20%;
+    }
+    nav {
+        margin-bottom: 0;
+    }
+    nav p {
+        display: none;
+    }
+}
+div[id ^= 'content'] {
+    grid-area: 1/1;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+div[id ^= 'content']:first-child {
+    opacity: 1;
 }
 
-section #left {
-  width: 20%;
+/* content0... */
+
+#content0 > .image0 {
+    max-width: 85%;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+#content0 > .story0 {
+    margin-top: -65%;
 }
 
-section #content {
-  width: 60%;
+/* content1... */
+
+#content1 > .image0 {
+    max-width: 85%;
+    margin-left: 4%;
+    margin-top: -16%;
+    opacity: 0.4;
+    z-index: 1;
 }
 
-section #right {
-  width: 15%;
+#content1 > .image1 {
+    max-width: 65%;
+    transform: scaleX(-1);
+    margin-top: -38%;
+    margin-left: 38%;
 }
 
-#back {
-  max-width: 67%;
-  margin-top: 460%;
-  margin-left: 60%;
+#content1 > .story0 {
+    margin-top: -20%;
+    margin-left: 14%;
 }
 
-#next {
-  max-width: 67%;
-  margin-top: 460%;
-  margin-left: -60%;
+/* content2... */
+
+#content2 > .image0 {
+    max-width: 80%;
+    margin-left: 10%;
+    margin-top: 7%;
 }
 
-#text_previous {
-  margin-top: -20%;
-  margin-left: 75%;
+#content2 > .story0 {
+    margin-top: -60%;
+    margin-left: 10%;
 }
 
-#text_next {
-  margin-top: -20%;
-  margin-left: -45%
+/* content3... */
+
+#content3 > .image0 {
+    position: absolute;
+    max-width: 66%;
+    top: -36%;
+    opacity: 0.3;
+    left: 66%;
+    transform: translateX(-50%);
 }
 
-a {
-  text-decoration: none;
+#content3 > .image1 {
+    position: absolute;
+    max-width: 66%;
+    top: -10%;
+    opacity: 0.3;
+    left: 90%;
+    transform: translateX(-50%);
 }
 
-  a:visited, a:link {
-    color: black;
-  }
+#content3 > .image2 {
+    max-width: 66%;
+    bottom: -3%;
+    left: 38%;
+}
+
+#content3 > .image3 {
+    max-width: 62%;
+    bottom: 5%;
+    left: 22%;
+}
+
+#content3 > .story0 {
+    left: 15%;
+    bottom: 62%;
+}
+
+#content3 > .story1 {
+    left: 15%;
+    bottom: 25%;
+}
+
+/* content4... */
+
+
+/* content5... */
+
+
+/* content6... */
+
+
+/* content7... */
