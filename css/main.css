@@ -83,6 +83,7 @@ nav {
     flex-direction: column;
     align-items: center;
     cursor: pointer;
+    z-index: 1000;
 }
 
 /* the text below the nav buttons */
