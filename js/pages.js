@@ -126,4 +126,30 @@ in the entire school.
             },
         ],
     },
+    // page 5
+    {
+        elements: [
+            {
+                area: '1 / 1 / 9 / 10',
+                image: 'full_desk_no_penny.png',
+                alt: 'Full Desk',
+                transform: 'scale(10)',
+                opacity: '0.4',
+            },
+            {
+                area: '9 / 1 / 2 / 6',
+                image: 'hand_and_penny.png',
+                alt: 'Penny in Hand',
+                transform: 'scale(2)',
+            },
+            {
+                area: '1 / 1 / 4 / 9',
+                html: `
+Every morning Charlotte<br>
+reaches for her favorite<br>
+purple colored pencil, Penny.
+`,
+            },
+        ],
+    },
 ];
