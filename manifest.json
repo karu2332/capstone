@@ -1,0 +1,9 @@
+{
+  "name": "Make Your Mark",
+  "short_name": "Make Your Mark",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#f8f5ed",
+  "theme_color": "#f8f5ed",
+  "orientation": "landscape"
+}
