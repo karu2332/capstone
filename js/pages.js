@@ -83,16 +83,45 @@ and crayons,<br>and colored pencils.
     {
         elements: [
             {
-                area: '2 / 2 / 9 / 9',
-                image: 'art_supplies.png',
-                alt: 'Art Supplies',
+                area: '1 / 6',
+                image: 'desk_closed.png',
+                alt: 'Closed Desk',
+                transform: 'scale(7)',
+                opacity: '0.4',
             },
             {
-                area: '1 / 1 / 4 / 9',
+                area: '3 / 9',
+                image: 'desk_closed.png',
+                alt: 'Closed Desk',
+                transform: 'scale(7)',
+                opacity: '0.4',
+            },
+            {
+                area: '5 / 6',
+                image: 'full_desk_no_penny.png',
+                alt: 'Full Desk',
+                transform: 'scale(8)',
+            },
+            {
+                area: '2 / 1 / 9 / 10',
+                image: 'charlotte_standing.png',
+                alt: 'Charlotte',
+            },
+            {
+                area: '2 / 2 / 5 / 10',
                 html: `
-Everyday the kids use their markers,<br>
-and paint brushes,<br>
-and crayons,<br>and colored pencils.
+Charlotte loves to draw with<br>
+her colorful markers<br>
+and paint with her<br>
+prickly paint brushes.
+`,
+            },
+            {
+                area: '6 / 2 / 10 / 10',
+                html: `
+Her desk has the<br>
+most art supplies<br>
+in the entire school.
 `,
             },
         ],
