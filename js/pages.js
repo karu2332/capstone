@@ -150,6 +150,53 @@ reaches for her favorite<br>
 purple colored pencil, Penny.
 `,
             },
+            {
+                area: '6 / 7 / 8 / 9',
+                html: `
+She uses Penny<br>
+in every single one<br>
+of her drawings.
+`,
+            },
+        ],
+    },
+    // page 6
+    {
+        elements: [
+            {
+              area: '1 / 4',
+              image: 'desk_closed.png',
+              alt: 'Closed Desk',
+              transform: 'scale(13) translate(0,-15%)',
+              opacity: '0.4',
+            },
+            {
+              area: '4 / 9',
+              image: 'desk_closed.png',
+              alt: 'Closed Desk',
+              transform: 'scale(13) translate(18%,0)',
+              opacity: '0.4',
+            },
+            {
+              area: '7 / 5',
+              image: 'monster_drawing_desk.png',
+              alt: 'Monster Drawing on Desk',
+              transform: 'scale(10) translate(0,-5%)',
+            },
+            {
+              area: '3 / 7',
+              image: 'coloredpencil_purple_arms.png',
+              alt: 'Purple Pencil',
+              transform: 'scale(5)',
+            },
+            {
+                area: '1 / 2 / 4 / 9',
+                html: `
+Penny creates yummy fruit,<br>
+and friendly monsters,<br>
+and gigantic galaxies.
+`,
+            },
         ],
     },
 ];
