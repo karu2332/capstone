@@ -4,18 +4,30 @@
 
 "use strict";
 
+// options for contact.js (for tap/click events)
+// https://biodiv.github.io/contactjs/
+const tapOptions = {
+    'supportedGestures': [Tap]
+};
+const swipeOptions = {
+    'supportedGestures': [Pan]
+};
+
 // single page app, this controls which content appears, starting at page 0
 let currentPage = 0;
 
-// look up nav and content elements
+// look up frequently used elements
+const $main = document.getElementsByTagName('main')[0];
 const $left = document.getElementById('left');
 const $right = document.getElementById('right');
 const $content = document.getElementById('content');
 
 // left nav...
-$left.addEventListener('click', navLeftClick);
+const leftPointerListener = new PointerListener($left, tapOptions);
+$left.addEventListener('tap', navLeftClick);
 
-function navLeftClick() {
+function navLeftClick(event) {
+    event.preventDefault();
     if (currentPage > 0) {
         pageExit(currentPage);
         currentPage--;
@@ -27,9 +39,11 @@ function navLeftClick() {
 }
 
 // right nav...
-$right.addEventListener('click', navRightClick);
+const rightPointerListener = new PointerListener($right, tapOptions);
+$right.addEventListener('tap', navRightClick);
 
-function navRightClick() {
+function navRightClick(event) {
+    event.preventDefault();
     if (currentPage < pageTable.length - 1) {
         pageExit(currentPage);
         currentPage++;
@@ -39,6 +53,20 @@ function navRightClick() {
         console.log('already at last page');
     }
 }
+
+const mainPointerListener = new PointerListener($content, swipeOptions);
+
+// swipe right is like clicking the left nav image
+$content.addEventListener('swiperight', function (e) {
+    console.log('swiperight');
+    navLeftClick(e);
+});
+
+// swipe left is like clicking the right nav image
+$content.addEventListener('swipeleft', function (e) {
+    console.log('swipeleft');
+    navRightClick(e);
+});
 
 // hide left nav on first page, right nav on last page
 function updateNavs() {
@@ -191,7 +219,7 @@ document.addEventListener('keydown', function(event) {
     switch(event.which) {
 
     case 37: // left
-        navLeftClick();
+        navLeftClick(event);
         break;
 
     case 38: // up
@@ -201,7 +229,7 @@ document.addEventListener('keydown', function(event) {
         break;
 
     case 39: // right
-        navRightClick();
+        navRightClick(event);
         break;
 
     case 40: // down
