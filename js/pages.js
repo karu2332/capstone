@@ -221,7 +221,7 @@ is Trace.
               area: '1 / 1 / 10 / 10',
               image: 'trace_crying_ondesk.png',
               alt: 'Trace Crying on Desk ',
-              transform: 'translate(-20%, 0)',
+              transform: 'translate(-20%, -15%)',
             },
             {
                 area: '9 / 10',
@@ -257,7 +257,7 @@ other art supplies.
                 area: '4 / 5',
                 image: 'trace_and_art_supplies_.png',
                 alt: 'Closed Desk',
-                transform: 'scale(9) translate(23%, 12%)',
+                transform: 'scale(9) translate(23%, 17%)',
             },
             {
                 area: '2 / 2 / 7 / 9',
@@ -275,26 +275,20 @@ amazing art.
     {
         elements: [
             {
-                area: '1 / 4',
-                image: 'desk_closed.png',
-                alt: 'Closed Desk',
-                transform: 'scale(14) translate(0, -14%)',
-                opacity: '0.4',
-            },
-            {
-                area: '4 / 5',
-                image: 'trace_and_art_supplies_.png',
-                alt: 'Closed Desk',
-                transform: 'scale(9) translate(23%, 12%)',
+                area: '1 / 1 / 10 / 10',
+                image: 'trace_back_corner.png',
+                alt: 'Trace in Back Corner of Desk',
+                transform: 'scale(2) translate(-2%, -11%)',
             },
             {
                 area: '2 / 2 / 7 / 9',
                 html: `
-Because Charlotte never<br>
-uses Trace, he sits in the back<br>
-of her desk and watches all<br>
-of his friends create<br>
-amazing art.
+Trace started to believe that<br>
+he would never be as creative as<br>
+the paint brushes,<br>
+and markers,<br>
+and crayons,<br>
+and colored pencils.
 `,
             },
         ],
