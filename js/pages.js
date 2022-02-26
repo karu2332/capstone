@@ -170,7 +170,7 @@ of her drawings.
               transform: 'translate(18%, 0)',
             },
             {
-                area: '1 / 2 / 4 / 9',
+                area: '2 / 2 / 6 / 9',
                 html: `
 Penny creates yummy fruit,<br>
 and friendly monsters,<br>
