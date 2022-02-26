@@ -271,4 +271,32 @@ amazing art.
             },
         ],
     },
+    // page 10
+    {
+        elements: [
+            {
+                area: '1 / 4',
+                image: 'desk_closed.png',
+                alt: 'Closed Desk',
+                transform: 'scale(14) translate(0, -14%)',
+                opacity: '0.4',
+            },
+            {
+                area: '4 / 5',
+                image: 'trace_and_art_supplies_.png',
+                alt: 'Closed Desk',
+                transform: 'scale(9) translate(23%, 12%)',
+            },
+            {
+                area: '2 / 2 / 7 / 9',
+                html: `
+Because Charlotte never<br>
+uses Trace, he sits in the back<br>
+of her desk and watches all<br>
+of his friends create<br>
+amazing art.
+`,
+            },
+        ],
+    },
 ];
