@@ -211,25 +211,56 @@ is Trace.
     {
         elements: [
             {
-              area: '1 / 1 / 10 / 10',
-              image: 'trace_in_cornerdesk.png',
-              alt: 'Penny on Desk',
+                area: '1 / 9',
+                image: 'desk_closed.png',
+                alt: 'Closed Desk',
+                transform: 'scale(14) translate(0, -5%)',
+                opacity: '0.4',
             },
             {
-                area: '1 / 2 / 4 / 9',
+              area: '1 / 1 / 10 / 10',
+              image: 'trace_crying_ondesk.png',
+              alt: 'Trace Crying on Desk ',
+              transform: 'translate(-20%, 0)',
+            },
+            {
+                area: '9 / 10',
+                image: 'desk_closed.png',
+                alt: 'Closed Desk',
+                transform: 'scale(14) translate(0, 15%)',
+                opacity: '0.4',
+            },
+            {
+                area: '5 / 6 / 4 / 9',
                 html: `
-But there is another<br>
-pencil inside of Charlotte’s<br>
-desk that she has never<br>
-used before...
+Charlotte never uses<br>
+Trace because she<br>
+doesn’t think that he<br>
+can create anything<br>
+as beautiful as her<br>
+other art supplies.
 `,
             },
+        ],
+    },
+    // page 9
+    {
+        elements: [
             {
-                area: '6 / 2 / 10 / 10',
+              area: '1 / 1 / 10 / 10',
+              image: 'trace_crying_ondesk.png',
+              alt: 'Trace Crying on Desk ',
+              transform: 'translate(-20%, 0)',
+            },
+            {
+                area: '5 / 5 / 4 / 9',
                 html: `
-...and this<br>
-pencil’s name<br>
-is Trace.
+Charlotte never uses<br>
+Trace because she<br>
+doesn’t think that he<br>
+can create anything<br>
+as beautiful as her<br>
+other art supplies.
 `,
             },
         ],
