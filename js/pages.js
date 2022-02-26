@@ -164,30 +164,9 @@ of her drawings.
     {
         elements: [
             {
-              area: '1 / 4',
-              image: 'desk_closed.png',
-              alt: 'Closed Desk',
-              transform: 'scale(13) translate(0,-15%)',
-              opacity: '0.4',
-            },
-            {
-              area: '4 / 9',
-              image: 'desk_closed.png',
-              alt: 'Closed Desk',
-              transform: 'scale(13) translate(18%,0)',
-              opacity: '0.4',
-            },
-            {
-              area: '7 / 5',
-              image: 'monster_drawing_desk.png',
-              alt: 'Monster Drawing on Desk',
-              transform: 'scale(10) translate(0,-5%)',
-            },
-            {
-              area: '3 / 7',
-              image: 'coloredpencil_purple_arms.png',
-              alt: 'Purple Pencil',
-              transform: 'scale(5)',
+              area: '1 / 1 / 10 / 10',
+              image: 'penny_on_desk.png',
+              alt: 'Penny on Desk',
             },
             {
                 area: '1 / 2 / 4 / 9',
@@ -195,6 +174,33 @@ of her drawings.
 Penny creates yummy fruit,<br>
 and friendly monsters,<br>
 and gigantic galaxies.
+`,
+            },
+        ],
+    },
+    // page 7
+    {
+        elements: [
+            {
+              area: '1 / 1 / 10 / 10',
+              image: 'trace_in_cornerdesk.png',
+              alt: 'Penny on Desk',
+            },
+            {
+                area: '1 / 2 / 4 / 9',
+                html: `
+But there is another<br>
+pencil inside of Charlotte’s<br>
+desk that she has never<br>
+used before...
+`,
+            },
+            {
+                area: '6 / 2 / 10 / 10',
+                html: `
+...and this<br>
+pencil’s name<br>
+is Trace.
 `,
             },
         ],
