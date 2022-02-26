@@ -189,7 +189,7 @@ and gigantic galaxies.
               transform: 'translate(28%, 0)',
             },
             {
-                area: '1 / 2 / 4 / 9',
+                area: '2 / 2 / 4 / 9',
                 html: `
 But there is another<br>
 pencil inside of Charlotte’s<br>
@@ -247,20 +247,26 @@ other art supplies.
     {
         elements: [
             {
-              area: '1 / 1 / 10 / 10',
-              image: 'trace_crying_ondesk.png',
-              alt: 'Trace Crying on Desk ',
-              transform: 'translate(-20%, 0)',
+                area: '1 / 4',
+                image: 'desk_closed.png',
+                alt: 'Closed Desk',
+                transform: 'scale(14) translate(0, -14%)',
+                opacity: '0.4',
             },
             {
-                area: '5 / 5 / 4 / 9',
+                area: '4 / 5',
+                image: 'trace_and_art_supplies_.png',
+                alt: 'Closed Desk',
+                transform: 'scale(9) translate(23%, 12%)',
+            },
+            {
+                area: '2 / 2 / 7 / 9',
                 html: `
-Charlotte never uses<br>
-Trace because she<br>
-doesn’t think that he<br>
-can create anything<br>
-as beautiful as her<br>
-other art supplies.
+Because Charlotte never<br>
+uses Trace, he sits in the back<br>
+of her desk and watches all<br>
+of his friends create<br>
+amazing art.
 `,
             },
         ],
