@@ -25,6 +25,7 @@ How to save PWA to home screen...
                 area: '1 / 1 / 10 / 10',
                 image: 'school_confetti_blueroad.png',
                 alt: 'School',
+                transform: 'translate(0, 8%)',
             },
             {
                 area: '1 / 1 / 4 / 9',
@@ -68,6 +69,7 @@ and paint,<br> and create beautiful artwork.
                 area: '2 / 2 / 9 / 9',
                 image: 'art_supplies.png',
                 alt: 'Art Supplies',
+                transform: 'translate(10%, 10%) scale(1.5)',
             },
             {
                 area: '1 / 1 / 4 / 9',
@@ -167,7 +169,7 @@ of her drawings.
               area: '1 / 1 / 10 / 10',
               image: 'penny_on_desk.png',
               alt: 'Penny on Desk',
-              transform: 'translate(18%, 0)',
+              transform: 'scale(1.5) translate(2%, 0)',
             },
             {
                 area: '2 / 2 / 6 / 9',
@@ -323,7 +325,7 @@ imagination anymore.
                 transform: 'scale(9) translate(15%, 35%)',
             },
             {
-                area: '1 / 1 / 10 / 10',
+                area: '2 / 1 / 10 / 10',
                 html: `
 But what Trace<br>
 doesn't know is that<br>
@@ -353,7 +355,7 @@ and colored pencils....
                 transform: 'scale(1.5) translate(-10%, 3%)',
             },
             {
-                area: '2 / 4 / 10 / 10',
+                area: '3 / 4 / 10 / 10',
                 html: `
 Trace needs you to<br>
 join him on a journey<br>
