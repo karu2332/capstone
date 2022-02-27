@@ -293,4 +293,24 @@ and colored pencils.
             },
         ],
     },
+    // page 11
+    {
+        elements: [
+            {
+                area: '2 / 2 / 10 / 10',
+                image: 'trace_grey_confetti.png',
+                alt: 'Trace',
+                transform: 'translate(-22%, -11%)',
+            },
+            {
+                area: '5 / 7 / 10 / 10',
+                html: `
+Trace feels like<br>
+he does not know<br>
+how to use his<br>
+imagination anymore.
+`,
+            },
+        ],
+    },
 ];
