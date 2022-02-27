@@ -331,7 +331,7 @@ But what Trace<br>
 doesn't know is that<br>
 he can be just<br>
 as creative as<br>
-the paint brushes<br>,
+the paint brushes,<br>
 and markers,<br>
 and crayons,<br>
 and colored pencils....
