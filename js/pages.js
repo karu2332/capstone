@@ -299,7 +299,7 @@ and colored pencils.
             {
                 area: '2 / 2 / 10 / 10',
                 image: 'trace_grey_confetti.png',
-                alt: 'Trace',
+                alt: 'Trace Surrounded with Grey Confetti',
                 transform: 'translate(-22%, -11%)',
             },
             {
@@ -309,6 +309,36 @@ Trace feels like<br>
 he does not know<br>
 how to use his<br>
 imagination anymore.
+`,
+            },
+        ],
+    },
+    // page 12
+    {
+        elements: [
+            {
+                area: '2 / 6',
+                image: 'trace_color_confetti.png',
+                alt: 'Trace Surrounded with Color Confetti',
+                transform: 'scale(9) translate(15%, 35%)',
+            },
+            {
+                area: '1 / 1 / 10 / 10',
+                html: `
+But what Trace<br>
+doesn't know is that<br>
+he can be just<br>
+as creative as<br>
+the paint brushes<br>,
+and markers,<br>
+and crayons,<br>
+and colored pencils....
+`,
+            },
+            {
+                area: '7 / 1 / 10 / 10',
+                html: `
+...but HE NEEDS YOUR HELP!
 `,
             },
         ],
