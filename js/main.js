@@ -139,6 +139,13 @@ const delay = async ms => new Promise(res => setTimeout(res, ms));
 function pageEnter(pageNum) {
     console.log(`pageEnter(${pageNum})`);
     const $page = document.getElementById(`page-${pageNum}`);
+    const thisPage = pageTable[pageNum];
+    if ("background" in thisPage) {
+      console.log(`background ${thisPage.background}`)
+      document.body.style.background = thisPage.background;
+    } else {
+      document.body.style.background = "#f8f5ed";
+    }
     $page.style.opacity = 1;
 }
 

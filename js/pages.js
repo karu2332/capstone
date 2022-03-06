@@ -366,4 +366,26 @@ always had!<br>
             },
         ],
     },
+    // page 14
+    {
+        background: "red",
+        elements: [
+            {
+                area: '1 / 1 / 8 / 10',
+                image: 'traceinfrontschool.png',
+                alt: 'School',
+                transform: 'scale(1.5) translate(-10%, 3%)',
+            },
+            {
+                area: '3 / 4 / 10 / 10',
+                html: `
+Trace needs you to<br>
+join him on a journey<br>
+to unlock the creativity and<br>
+imagination he has<br>
+always had!<br>
+`,
+            },
+        ],
+    },
 ];

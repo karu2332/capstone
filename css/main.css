@@ -5,10 +5,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
 
 html {
-    background-color: #f8f5ed;
     overflow: hidden;
 }
 body {
+    background-color: #f8f5ed;
     margin: 0;
     font-family: 'Gloria Hallelujah', cursive;
     font-size: clamp(1.25rem, 1.5vw, 1.5rem);
