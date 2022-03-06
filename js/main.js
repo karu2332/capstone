@@ -4,15 +4,6 @@
 
 "use strict";
 
-// options for contact.js (for tap/click events)
-// https://biodiv.github.io/contactjs/
-const tapOptions = {
-    'supportedGestures': [Tap]
-};
-const swipeOptions = {
-    'supportedGestures': [Pan]
-};
-
 // single page app, this controls which content appears, starting at page 0
 let currentPage = 0;
 
@@ -23,8 +14,7 @@ const $right = document.getElementById('right');
 const $content = document.getElementById('content');
 
 // left nav...
-const leftPointerListener = new PointerListener($left, tapOptions);
-$left.addEventListener('tap', navLeftClick);
+$('#left').on('click', navLeftClick);
 
 function navLeftClick(event) {
     event.preventDefault();
@@ -39,8 +29,7 @@ function navLeftClick(event) {
 }
 
 // right nav...
-const rightPointerListener = new PointerListener($right, tapOptions);
-$right.addEventListener('tap', navRightClick);
+$('#right').on('click', navRightClick);
 
 function navRightClick(event) {
     event.preventDefault();
@@ -53,20 +42,6 @@ function navRightClick(event) {
         console.log('already at last page');
     }
 }
-
-const mainPointerListener = new PointerListener($content, swipeOptions);
-
-// swipe right is like clicking the left nav image
-$content.addEventListener('swiperight', function (e) {
-    console.log('swiperight');
-    navLeftClick(e);
-});
-
-// swipe left is like clicking the right nav image
-$content.addEventListener('swipeleft', function (e) {
-    console.log('swipeleft');
-    navRightClick(e);
-});
 
 // hide left nav on first page, right nav on last page
 function updateNavs() {
@@ -90,16 +65,42 @@ function drawAllPages() {
         const thisPage = pageTable[pageNum];
         const $page = document.createElement('div');
         $page.id = `page-${pageNum}`;
+        $content.appendChild($page);
+        $page.style.visibility = 'hidden';
         for (const el of thisPage.elements) {
             pageDrawElement($page, el);
         }
-        $content.appendChild($page);
+        if ('noSwipe' in thisPage) {
+		        console.log(`no swipe for page ${pageNum}`);
+	      } else {
+            jquerySwipeHandler.handleSwipe(`#page-${pageNum}`, [
+                jquerySwipeHandler.SWIPE_LEFT,
+                jquerySwipeHandler.SWIPE_RIGHT,
+                ], function (direction) {
+                    console.log('swipe: ', direction);
+                    switch (direction) {
+                        case jquerySwipeHandler.SWIPE_LEFT:
+                            $('#right').trigger('click');
+                            break;
+                        case jquerySwipeHandler.SWIPE_RIGHT:
+                            $('#left').trigger('click');
+                            break;
+                    }
+            });
+        }
     }
+}
+
+let currentCounter = 1;    // used to generate unique ids
+function counter() {
+    return currentCounter++;
 }
 
 // called to draw an element on a page
 function pageDrawElement($page, el) {
     const $div = document.createElement('div');
+    $div.style.gridArea = el.area;
+    $page.appendChild($div);
 
     if ('html' in el) {
         // element is some html
@@ -114,12 +115,31 @@ function pageDrawElement($page, el) {
         $img.src = `img/${el.image}`;
         $img.alt = el.alt;
         $div.appendChild($img);
+
+        if ('audio' in el) {
+            console.log(`image audio ${el.audio}`);
+            const url = `audio/${el.audio}`;
+            const audio = new Audio(url);
+            const id = `audio${counter()}`;
+            $img.id = id;
+            $(`#${id}`).on('click', (e) => {
+                audio.play();
+            });
+        }
+    } else if ('draw' in el) {
+        $div.classList.add('image-element');
+        if (el.draw === 'input') {
+            // drawing input tool
+            $div.id = 'draw-input';
+            simpleDraw('#draw-input');
+        } else {
+            // show the drawing previously input
+            $div.id = 'draw-output';
+        }
     } else {
         console.log('unknown element type', el);
         return;
     }
-
-    $div.style.gridArea = el.area;
 
     if ('transform' in el) {
         $div.style.transform = el.transform;
@@ -128,8 +148,6 @@ function pageDrawElement($page, el) {
     if ('opacity' in el) {
         $div.style.opacity = el.opacity;
     }
-
-    $page.appendChild($div);
 }
 
 // delay in ms, example delay(1000) for one second
@@ -139,14 +157,30 @@ const delay = async ms => new Promise(res => setTimeout(res, ms));
 function pageEnter(pageNum) {
     console.log(`pageEnter(${pageNum})`);
     const $page = document.getElementById(`page-${pageNum}`);
-    const thisPage = pageTable[pageNum];
-    if ("background" in thisPage) {
-      console.log(`background ${thisPage.background}`)
-      document.body.style.background = thisPage.background;
-    } else {
-      document.body.style.background = "#f8f5ed";
-    }
+    $page.style.visibility = 'visible';
     $page.style.opacity = 1;
+
+    const thisPage = pageTable[pageNum];
+    if ('showDrawing' in thisPage) {
+        const w = $('#draw-output').width();
+        const h = $('#draw-output').height();
+        const m = Math.floor(Math.min(w - 4, h));
+        console.log(`draw-output ${w} x ${h} -> ${m} x ${m}`);
+        let ops = simpleDrawState.draw.shortops();
+        let opsWidth = simpleDrawState.draw.width();
+        let $canvas = $('<canvas>');
+        let draw = new Draw($canvas, ops, true);
+        draw.resize(m, m);
+        $('#draw-output').empty().append($canvas);
+        draw.scale(m/opsWidth);
+        draw.animate();
+    }
+    if ('background' in thisPage) {
+        console.log(`background ${thisPage.background}`)
+        document.body.style.background = thisPage.background;
+    } else {
+        document.body.style.background = "#f8f5ed";
+    }
 }
 
 // called to remove all content elements when a page is exited
@@ -154,6 +188,7 @@ function pageExit(pageNum) {
     console.log(`pageExit(${pageNum})`);
     const $page = document.getElementById(`page-${pageNum}`);
     $page.style.opacity = 0;
+    $page.style.visibility = 'hidden';
 }
 
 // summarize a string by showing the first 40 characters

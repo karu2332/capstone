@@ -68,7 +68,12 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 10;
+    /*
+     * setting the z-index triggers a bug on iOS Safari,
+     * making the images look blurry.  The workaround
+     * is to rely on the order of the image placement in pages.js.
+     */
+    /* z-index: 10; */
 }
 .html-element {
     display: flex;

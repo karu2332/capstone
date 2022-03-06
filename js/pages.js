@@ -388,4 +388,48 @@ always had!<br>
             },
         ],
     },
+    // page 15
+    {
+        noSwipe: true,
+        elements: [
+            {
+                area: '1 / 1 / 10 / 10',
+                draw: 'input',
+            },
+        ],
+    },
+    // page 16
+    {
+        showDrawing: true,
+        elements: [
+            {
+                area: '3 / 3 / 6 / 6',
+                draw: 'output',
+            },
+        ],
+    },
+    // page 17
+    {
+        noSwipe: true,
+        elements: [
+            {
+                area: '2 / 5',
+                image: 'house.png',
+                alt: 'Guitar',
+                audio: 'guitar.wav',
+            },
+            {
+                area: '4 / 5',
+                image: 'house.png',
+                alt: 'Drums',
+                audio: 'drums.wav',
+            },
+            {
+                area: '6 / 5',
+                image: 'house.png',
+                alt: 'Piano',
+                audio: 'piano.wav',
+            },
+        ],
+    },
 ];
