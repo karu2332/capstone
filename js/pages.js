@@ -10,10 +10,14 @@ var pageTable = [
             {
                 area: '3 / 3 / 10 / 10',
                 html: `
-Welcome.<br>
-Info about app...<br>
-Info about authors...<br>
-How to save PWA to home screen...
+If you are viewing this from your browser,<br>
+we recommend installing this app:<br><br>
+For iOS:<br>
+1. Tap the Share button<br>
+2. Select "Add to Home Screen"<br><br>
+For Android:<br>
+1. Tap Settings<br>
+2. Select "Add to Home Screen"
 `,
             },
         ],
