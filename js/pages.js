@@ -370,27 +370,199 @@ always had!<br>
     },
     // page 14
     {
-        background: "red",
         elements: [
             {
                 area: '1 / 1 / 8 / 10',
-                image: 'traceinfrontschool.png',
+                image: 'school_open_door.png',
                 alt: 'School',
-                transform: 'scale(1.5) translate(-10%, 3%)',
+                opacity: 0.4,
+                transform: 'scale(2.0)',
             },
             {
-                area: '3 / 4 / 10 / 10',
+                area: '8 / 8',
+                image: 'trace_sad_arms.png',
+                alt: 'Trace',
+                transform: 'scale(8)',
+            },
+            {
+                area: '2 / 1 / 10 / 10',
                 html: `
-Trace needs you to<br>
-join him on a journey<br>
-to unlock the creativity and<br>
-imagination he has<br>
-always had!<br>
+Trace needs to find<br>
+his creativity. Help him<br>
+navigate outside of DayDream<br>
+Elementary for the first<br>
+time ever and explore the<br>
+world for inspiration.
 `,
             },
         ],
     },
     // page 15
+    {
+        background: '#FADB8778',
+        elements: [
+            {
+                area: '3 / 7',
+                image: 'ticket_creation.png',
+                alt: 'Train Ticket',
+                transform: 'scale(8) rotate(30deg)',
+            },
+            {
+                area: '4 / 1 / 10 / 10',
+                html: `
+It’s time to<br>
+help Trace explore his<br>
+creativity through music,<br>
+and dance,<br>
+and art,<br>
+and writing.
+`,
+            },
+        ],
+    },
+    // page 16
+    {
+        background: '#5ED4F778',
+        elements: [
+            {
+                area: '1 / 1 / 10 / 10',
+                image: 'train-grass.png',
+                alt: 'Train',
+                transform: 'scaleX(140%) scaleY(125%)',
+            },
+            {
+                area: '2 / 5 / 10 / 10',
+                html: `
+Hop Aboard! Join Trace on the<br>
+Inspiration Train where creativity<br>
+is explored at every stop.
+`,
+            },
+        ],
+    },
+    // page 17
+    {
+        background: '#78E06078',
+        elements: [
+            {
+                area: '4 / 3',
+                image: 'ticket_rockandroll.png',
+                alt: 'Rock and Roll Train Ticket',
+                transform: 'scale(10) rotate(90deg) translateX(40%)',
+            },
+            {
+                area: '1 / 7',
+                image: 'ticket_rockandroll.png',
+                alt: 'Rock and Roll Train Ticket',
+                transform: 'scale(10) rotate(90deg) translateX(5%)',
+            },
+            {
+                area: '2 / 2 / 10 / 10',
+                html: `
+First stop is the<br>
+Rock and Roll River!
+`,
+            },
+        ],
+    },
+    // page 18
+    {
+        noSwipe: true,
+        background: '#AB5AED78',
+        elements: [
+            // first group of notes
+            {
+                area: '3 / 1',
+                image: 'music_note_2.png',
+                alt: 'Quarter Note',
+                transform: 'rotate(9deg)',
+            },
+            {
+                area: '3 / 3',
+                image: 'music_note_2.png',
+                alt: 'Quarter Note',
+                transform: 'rotate(9deg)',
+            },
+            {
+                area: '4 / 2',
+                image: 'music_note_1.png',
+                alt: 'Eighth Notes',
+                transform: 'rotate(-20deg) translateY(-30%)',
+            },
+            // second group of notes
+            {
+                area: '6 / 4',
+                image: 'music_note_2.png',
+                alt: 'Quarter Note',
+                transform: 'rotate(-10deg)',
+            },
+            {
+                area: '6 / 6',
+                image: 'music_note_2.png',
+                alt: 'Quarter Note',
+                transform: 'rotate(15deg), translateY(-30%)',
+            },
+            {
+                area: '6 / 5',
+                image: 'music_note_1.png',
+                alt: 'Eighth Notes',
+                transform: 'rotate(-10deg) translateY(-30%)',
+            },
+            // third group of notes
+            {
+                area: '7 / 9',
+                image: 'music_note_2.png',
+                alt: 'Quarter Note',
+                transform: 'rotate(5deg)',
+            },
+            {
+                area: '6 / 8',
+                image: 'music_note_1.png',
+                alt: 'Eighth Notes',
+                transform: 'rotate(20deg) translateX(40%)',
+            },
+            // fourth group of notes
+            {
+                area: '2 / 9',
+                image: 'music_note_2.png',
+                alt: 'Quarter Note',
+                transform: 'rotate(-10deg)',
+            },
+            {
+                area: '3 / 10',
+                image: 'music_note_1.png',
+                alt: 'Eighth Notes',
+                transform: 'rotate(5deg)',
+            },
+            {
+                area: '3 / 1 / 10 / 5',
+                image: 'electric_guitar.png',
+                alt: 'Electric Guitar',
+                audio: 'guitar.wav',
+                transform: 'rotate(-10deg)',
+            },
+            {
+                area: '5 / 5 / 10 / 9',
+                image: 'drumsticks.png',
+                alt: 'Drumsticks',
+                audio: 'drums.wav',
+                transform: 'rotate(30deg)',
+            },
+            {
+                area: '2 / 4 / 7 / 10',
+                image: 'keyboard.png',
+                alt: 'Keyboard',
+                audio: 'piano.wav',
+            },
+            {
+                area: '2 / 2 / 3 / 10',
+                html: `
+Music is always being created at the  Rock and Roll River.
+`,
+            },
+        ],
+    },
+    // Interaction: page 18
     {
         noSwipe: true,
         elements: [

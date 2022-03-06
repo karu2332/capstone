@@ -124,6 +124,7 @@ function pageDrawElement($page, el) {
             const id = `audio${counter()}`;
             $img.id = id;
             $(`#${id}`).on('click', (e) => {
+                console.log(`click ${id}`);
                 audio.play();
             });
         }
