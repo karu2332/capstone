@@ -30,6 +30,7 @@ function navLeftClick(event) {
 
 // right nav...
 $('#right').on('click', navRightClick);
+$('#go-right').on('click', navRightClick);
 
 function navRightClick(event) {
     event.preventDefault();
@@ -161,6 +162,7 @@ function pageEnter(pageNum) {
     $page.style.opacity = 1;
 
     const thisPage = pageTable[pageNum];
+    // check for properties that take effect every time we enter this page
     if ('showDrawing' in thisPage) {
         const w = $('#draw-output').width();
         const h = $('#draw-output').height();
@@ -180,6 +182,14 @@ function pageEnter(pageNum) {
         document.body.style.background = thisPage.background;
     } else {
         document.body.style.background = "#f8f5ed";
+    }
+    if ('goRight' in thisPage) {
+        console.log('goRight');
+        $('#right').hide();
+        $('#go-right').show();
+    } else {
+        $('#right').show();
+        $('#go-right').hide();
     }
 }
 

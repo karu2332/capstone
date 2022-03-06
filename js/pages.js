@@ -348,6 +348,7 @@ and colored pencils....
     },
     // page 13
     {
+        goRight: true,
         elements: [
             {
                 area: '1 / 1 / 8 / 10',

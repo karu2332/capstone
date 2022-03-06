@@ -111,6 +111,9 @@ nav p {
 #left {
     opacity: 0;
 }
+#go-right {
+    display: none;
+}
 
 /* move the nav to a stripe at the bottom when in portrait mode */
 @media (orientation: portrait) {
