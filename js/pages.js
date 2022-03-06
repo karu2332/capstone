@@ -568,7 +568,21 @@ Music is always being created at the  Rock and Roll River.
         elements: [
             {
                 area: '1 / 1 / 10 / 10',
+                image: 'art-avenue-01.png',
+                alt: 'Art Avenue',
+                opacity: 0.3,
+                transform: 'scale(6) translate(5%, -30%)',
+            },
+            {
+                area: '1 / 2 / 10 / 10',
+                image: 'blank-easel.png',
+                alt: 'Easel',
+                transform: 'scale(1.3)',
+            },
+            {
+                area: '1 / 4 / 10 / 10',
                 draw: 'input',
+                transform: 'scale(0.85)',
             },
         ],
     },
