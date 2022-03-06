@@ -108,6 +108,7 @@ and crayons,<br>and colored pencils.
                 area: '2 / 1 / 9 / 10',
                 image: 'charlotte_standing.png',
                 alt: 'Charlotte',
+                transform: 'scale(1.01)',
             },
             {
                 area: '2 / 2 / 5 / 10',
