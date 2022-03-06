@@ -432,7 +432,7 @@ and writing.
                 area: '1 / 1 / 10 / 10',
                 image: 'train-grass.png',
                 alt: 'Train',
-                transform: 'scaleX(140%) scaleY(125%)',
+                transform: 'scale(140%)',
             },
             {
                 area: '2 / 5 / 10 / 10',
@@ -465,6 +465,18 @@ is explored at every stop.
                 html: `
 First stop is the<br>
 Rock and Roll River!
+`,
+            },
+        ],
+    },
+    // temporary page
+    {
+        elements: [
+            {
+                area: '3 / 3 / 10 / 10',
+                html: `
+The remaining pages are still in layout, and the story is not done yet.<br>
+The next few pages are to show how some of the interactions will work.
 `,
             },
         ],
@@ -546,7 +558,7 @@ Rock and Roll River!
                 transform: 'rotate(-10deg)',
             },
             {
-                area: '5 / 5 / 10 / 9',
+                area: '6 / 5 / 10 / 9',
                 image: 'drumsticks.png',
                 alt: 'Drumsticks',
                 audio: 'drums.wav',
@@ -561,7 +573,8 @@ Rock and Roll River!
             {
                 area: '2 / 2 / 3 / 10',
                 html: `
-Music is always being created at the  Rock and Roll River.
+Music is always being created at the  Rock and Roll River.<br>
+Tap your favorite instrument!
 `,
             },
         ],
@@ -597,30 +610,6 @@ Music is always being created at the  Rock and Roll River.
             {
                 area: '3 / 3 / 6 / 6',
                 draw: 'output',
-            },
-        ],
-    },
-    // page 17
-    {
-        noSwipe: true,
-        elements: [
-            {
-                area: '2 / 5',
-                image: 'house.png',
-                alt: 'Guitar',
-                audio: 'guitar.wav',
-            },
-            {
-                area: '4 / 5',
-                image: 'house.png',
-                alt: 'Drums',
-                audio: 'drums.wav',
-            },
-            {
-                area: '6 / 5',
-                image: 'house.png',
-                alt: 'Piano',
-                audio: 'piano.wav',
             },
         ],
     },
