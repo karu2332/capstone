@@ -599,6 +599,137 @@ favorite instruments.
             },
         ],
     },
+    // page 20
+    {
+        background: '#68B55678',
+        elements: [
+            {
+                area: '1 / 1 / 10 / 10',
+                image: 'river_02.png',
+                alt: 'Rock and Roll River',
+                transform: 'scale(1.27)',
+            },
+            {
+                area: '6 / 3',
+                image: 'fish.png',
+                alt: 'Fish',
+                transform: 'scale(4)',
+            },
+            {
+                area: '6 / 6 / 10 / 10',
+                html: `
+The fish practice<br>
+their songs until they<br>
+all sing in harmony.
+`,
+            },
+        ],
+    },
+    // page 21
+    {
+        background: '#68B55678',
+        elements: [
+            {
+                area: '1 / 1 / 10 / 10',
+                image: 'otters.png',
+                alt: 'Otters',
+                transform: 'scale(1.27)',
+            },
+            {
+                area: '2 / 8 / 10 / 10',
+                html: `
+The otters dance<br>
+to the music played<br>
+by all their friends.
+`,
+            },
+        ],
+    },
+    // page 22
+    {
+        elements: [
+            {
+                area: '1 / 1 / 10 / 10',
+                image: 'otters.png',
+                alt: 'Otters',
+                opacity: 0.3,
+                transform: 'scale(2.7) translate(2%, -21%)',
+            },
+            {
+                area: '5 / 7',
+                image: 'trace_music.png',
+                alt: 'Trace Playing Music',
+                transform: 'scale(5)',
+            },
+            {
+                area: '3 / 2 / 10 / 10',
+                html: `
+Trace has never heard<br>
+so much music before.
+
+`,
+            },
+            {
+                area: '5 / 3 / 10 / 10',
+                html: `
+He always thought that<br>
+only musicians could make music.<br>
+
+`,
+            },
+        ],
+    },
+    // page 23
+    {
+        background: '#5ED4F778',
+        elements: [
+            {
+                area: '1 / 1 / 10 / 10',
+                image: 'keyboard.png',
+                alt: 'Keyboard',
+                transform: 'scale(1.3)',
+            },
+            {
+                area: '7 / 1',
+                image: 'music_note_2.png',
+                alt: 'Quarter Note',
+                transform: 'rotate(-10deg)',
+            },
+            {
+                area: '7 / 2',
+                image: 'music_note_1.png',
+                alt: 'Eighth Note',
+                transform: 'rotate(5deg) translate(-20%, 50%)',
+            },
+            {
+                area: '2 / 9',
+                image: 'music_note_1.png',
+                alt: 'Eighth Note',
+                transform: 'rotate(10deg) translate(60%, 50%)',
+            },
+            {
+                area: '3 / 9',
+                image: 'music_note_2.png',
+                alt: 'Quarter Note',
+                transform: 'rotate(10deg) translate(110%, 30%)',
+            },
+            {
+                area: '2 / 1 / 10 / 10',
+                html: `
+Now it’s your turn to play some music -<br>
+tap the keys and play anything you want.
+`,
+            },
+            {
+                area: '8 / 5 / 10 / 10',
+                html: `
+Show Trace what’s possible and<br>
+give the Otters something to<br>
+dance too!
+`,
+            },
+        ],
+    },
     // page 30
     {
         noSwipe: true,
