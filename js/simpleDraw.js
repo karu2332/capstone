@@ -73,8 +73,7 @@ function resizeHandler() {
 	const w = $('#draw-container').width();
 	const h = $('#draw-container').height();
 	const m = Math.floor(Math.min(w - 4, h));
-	const z = Math.floor(m / 375);
-	console.log(`${w}x${h} ${m} ${z}`);
+	console.log(`${w}x${h} ${m}`);
 
 	// XXX should adjust scale if in the middle of drawing
 	simpleDrawState.draw.resize(m, m);
@@ -132,17 +131,17 @@ class Draw {
 			// event listeners...
 			this.$canvas.on('pointerdown', (e) => {
 				this.down = true;
-				let offset = this.$canvas.offset();
+				const xy = this.mouseXY(e);
 				this.logAndExecute({ what: 'start',
-					x: e.clientX - offset.left,
-					y: e.clientY - offset.top});
+					x: xy.x,
+					y: xy.y});
 			})
 			.on('pointermove', (e) => {
+				const xy = this.mouseXY(e);
 				if (this.down) {
-					let offset = this.$canvas.offset();
 					this.logAndExecute({ what: 'move',
-						x: e.clientX - offset.left,
-						y: e.clientY - offset.top});
+						x: xy.x,
+						y: xy.y});
 				}
 			})
 			.on('pointerup', (e) => {
@@ -290,6 +289,15 @@ class Draw {
 		op.timestamp = Date.now();
 		this.ops.push(op);
 		this.execute(op, true);
+	}
+	mouseXY(e) {
+		const r = this.$canvas[0].getBoundingClientRect();
+		const scaleX = this.$canvas[0].width / r.width;
+		const scaleY = this.$canvas[0].height / r.height;
+		return {
+			x: Math.round((e.clientX - r.left) * scaleX),
+			y: Math.round((e.clientY - r.top) * scaleY)
+		}
 	}
 
 	// external API...
