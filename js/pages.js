@@ -174,7 +174,7 @@ of her drawings.
               area: '1 / 1 / 10 / 10',
               image: 'penny_on_desk.png',
               alt: 'Penny on Desk',
-              transform: 'scale(1.5) translate(2%, 0)',
+              transform: 'scale(2) translate(2%, 0)',
             },
             {
                 area: '2 / 2 / 6 / 9',
@@ -193,7 +193,7 @@ and gigantic galaxies.
               area: '1 / 1 / 10 / 10',
               image: 'trace_in_cornerdesk.png',
               alt: 'Trace Inside Desk',
-              transform: 'translate(28%, 0)',
+              transform: 'translate(39%, 0)',
             },
             {
                 area: '2 / 2 / 4 / 9',
@@ -231,7 +231,7 @@ is Trace.
               transform: 'translate(-20%, -15%)',
             },
             {
-                area: '9 / 10',
+                area: '9 / 9',
                 image: 'desk_closed.png',
                 alt: 'Closed Desk',
                 transform: 'scale(14) translate(0, 15%)',
@@ -545,7 +545,7 @@ The next few pages are to show how some of the interactions will work.
                 transform: 'rotate(-10deg)',
             },
             {
-                area: '3 / 10',
+                area: '3 / 9',
                 image: 'music_note_1.png',
                 alt: 'Eighth Notes',
                 transform: 'rotate(5deg)',
@@ -579,7 +579,27 @@ Tap your favorite instrument!
             },
         ],
     },
-    // Interaction: page 18
+    // page 19
+    {
+        background: '#68B55678',
+        elements: [
+            {
+                area: '1 / 1 / 10 / 10',
+                image: 'river_02.png',
+                alt: 'Rock and Roll River',
+                transform: 'scale(1.27)',
+            },
+            {
+                area: '5 / 5 / 10 / 10',
+                html: `
+The alligators are<br>
+always performing their<br>
+favorite instruments.
+`,
+            },
+        ],
+    },
+    // page 30
     {
         noSwipe: true,
         elements: [
@@ -603,7 +623,7 @@ Tap your favorite instrument!
             },
         ],
     },
-    // page 16
+    // page 31
     {
         showDrawing: true,
         elements: [
