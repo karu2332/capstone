@@ -174,7 +174,7 @@ of her drawings.
               area: '1 / 1 / 10 / 10',
               image: 'penny_on_desk.png',
               alt: 'Penny on Desk',
-              transform: 'scale(2) translate(2%, 0)',
+              transform: 'scale(1.3) translate(2%, 0)',
             },
             {
                 area: '2 / 2 / 6 / 9',
@@ -193,7 +193,7 @@ and gigantic galaxies.
               area: '1 / 1 / 10 / 10',
               image: 'trace_in_cornerdesk.png',
               alt: 'Trace Inside Desk',
-              transform: 'scale(2.4) translate(1%, 5%)',
+              transform: 'scale(1.1) translate(10%, 5%)',
             },
             {
                 area: '2 / 1 / 4 / 9',
@@ -285,7 +285,7 @@ amazing art.
                 area: '1 / 1 / 10 / 10',
                 image: 'trace_back_corner.png',
                 alt: 'Trace in Back Corner of Desk',
-                transform: 'scale(2) translate(-2%, 1%)',
+                transform: 'scale(2) translate(-2%, 10%)',
             },
             {
                 area: '2 / 2 / 7 / 9',
@@ -307,10 +307,10 @@ and colored pencils.
                 area: '2 / 2 / 10 / 10',
                 image: 'trace_grey_confetti.png',
                 alt: 'Trace Surrounded with Grey Confetti',
-                transform: ' scale(1.8) translate(-18%, -8%)',
+                transform: ' scale(1.2) translate(-18%, -8%)',
             },
             {
-                area: '5 / 7 / 10 / 10',
+                area: '5 / 8 / 10 / 10',
                 html: `
 Trace feels like<br>
 he does not know<br>
@@ -358,10 +358,10 @@ and colored pencils....
                 area: '1 / 1 / 8 / 10',
                 image: 'traceinfrontschool.png',
                 alt: 'School',
-                transform: 'scale(2) translate(-2%, 8%)',
+                transform: 'scale(1.5) translate(-5%, 5%)',
             },
             {
-                area: '3 / 5 / 10 / 10',
+                area: '3 / 4 / 10 / 10',
                 html: `
 Trace needs you to<br>
 join him on a journey<br>
@@ -409,7 +409,7 @@ world for inspiration.
                 area: '3 / 7',
                 image: 'ticket_creation.png',
                 alt: 'Train Ticket',
-                transform: 'scale(8) rotate(30deg)',
+                transform: 'scale(10) rotate(30deg)',
             },
             {
                 area: '4 / 1 / 10 / 10',
@@ -855,7 +855,7 @@ and thick triangles.
                 transform: 'scale(7)',
             },
             {
-                area: '6 / 2 / 10 / 10',
+                area: '6 / 1 / 10 / 10',
                 html: `
 Anyone who enters<br>
 Art Avenue must create<br>
@@ -923,14 +923,14 @@ drew with him.
                 transform: 'scale(0.85)',
             },
             {
-                area: '2 / 2 / 10 / 4',
+                area: '2 / 1 / 10 / 4',
                 html: `
 Help Trace add<br>
 to Art Avenue.
 `,
             },
             {
-                area: '5 / 2 / 10 / 4',
+                area: '5 / 1 / 10 / 4',
                 html: `
 Use your<br>
 creativity to<br>
