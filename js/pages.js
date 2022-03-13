@@ -980,4 +980,31 @@ you can imagine!
             },
         ],
     },
+    // page 32
+    {
+        background: '#5ED4F778',
+        elements: [
+            {
+                area: '1 / 1 / 10 / 10',
+                image: 'green_train.png',
+                alt: 'Train',
+                transform: 'scale(1.4) translate(2%, -3%)',
+            },
+            {
+                area: '2 / 4 / 10 / 10',
+                html: `
+Great job helping Trace<br>
+find his imagination<br>
+with music and art!
+`,
+            },
+            {
+                area: '3 / 7 / 10 / 10',
+                html: `
+Hop back aboard<br>
+for one more stop!
+`,
+            },
+        ],
+    },
 ];
