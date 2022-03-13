@@ -285,7 +285,7 @@ amazing art.
                 area: '1 / 1 / 10 / 10',
                 image: 'trace_back_corner.png',
                 alt: 'Trace in Back Corner of Desk',
-                transform: 'scale(2) translate(-2%, 10%)',
+                transform: 'scale(1.7) translate(-2%, -10%)',
             },
             {
                 area: '2 / 2 / 7 / 9',
@@ -432,7 +432,7 @@ and writing.
                 area: '1 / 1 / 10 / 10',
                 image: 'train-grass.png',
                 alt: 'Train',
-                transform: 'scale(140%)',
+                transform: 'scale(1.4) translate(2%, -3%)',
             },
             {
                 area: '2 / 5 / 10 / 10',
@@ -644,10 +644,10 @@ by all their friends.
                 transform: 'scale(2.7) translate(2%, -21%)',
             },
             {
-                area: '5 / 7',
+                area: '3 / 4 / 10 / 10',
                 image: 'trace_music.png',
                 alt: 'Trace Playing Music',
-                transform: 'scale(5)',
+                transform: 'scale(0.75) translateY(-25%)',
             },
             {
                 area: '3 / 2 / 10 / 10',
@@ -676,7 +676,7 @@ only musicians could make music.<br>
                 area: '1 / 1 / 10 / 10',
                 image: 'keyboard.png',
                 alt: 'Keyboard',
-                transform: 'scale(1.3)',
+                transform: 'scale(1.2)',
                 keyboard: true,
             },
             {
@@ -754,7 +754,7 @@ imagination to guide the way.
                 area: '1 / 1 / 10 / 10',
                 image: 'train-grass.png',
                 alt: 'Train',
-                transform: 'scale(140%)',
+                transform: 'scale(1.4) translate(2%, -3%)',
             },
             {
                 area: '2 / 5 / 10 / 10',
@@ -849,10 +849,10 @@ and thick triangles.
                 transform: 'scale(3.7) translate(15%, -26%)',
             },
             {
-                area: '6 / 6',
+                area: '2 / 3 / 10 / 10',
                 image: 'blank_easel_02.png',
                 alt: 'Easel',
-                transform: 'scale(7)',
+                transform: 'scale(1)',
             },
             {
                 area: '6 / 1 / 10 / 10',
@@ -876,10 +876,10 @@ to the collection of art.
                 transform: 'scale(3.7) translate(6%, -26%)',
             },
             {
-                area: '6 / 7',
+                area: '5 / 5 / 10 / 10',
                 image: 'trace_sad.png',
                 alt: 'Sad Trace',
-                transform: 'scale(9)',
+                transform: 'scale(1.5) translateY(-10%)',
             },
             {
                 area: '2 / 2 / 10 / 10',
@@ -952,21 +952,37 @@ you can imagine!
                 transform: 'scale(3.7) translate(6%, -26%)',
             },
             {
-                area: '5 / 5',
+                area: '2 / 1 / 10 / 10',
                 image: 'blank_easel_02.png',
                 alt: 'Filled Easel',
-                transform: 'scale(7)',
+                transform: 'scale(1)',
             },
             {
                 area: '4 / 4 / 7 / 7',
                 draw: 'output',
-                transform: 'scale(1.01)',
+                transform: 'scale(1.1) translateY(10%)',
             },
             {
-                area: '5 / 8',
+                area: '5 / 7/ 10 / 10',
                 image: 'happy_trace.png',
                 alt: 'Happy Trace',
-                transform: 'scale(9)',
+                transform: 'scale(1.75) translateY(-20%)',
+            },
+            {
+                area: '2 / 1 / 10 / 10',
+                html: `
+You just used your imagination<br>
+to show Trace that he has<br>
+always been able to draw<br>
+and create art!
+`,
+            },
+            {
+                area: '6 / 1 / 10 / 10',
+                html: `
+He just needed to<br>
+believe in himself.
+`,
             },
         ],
     },
