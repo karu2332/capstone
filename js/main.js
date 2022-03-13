@@ -4,6 +4,9 @@
 
 "use strict";
 
+// for keyboard tones
+const synth = new Tone.Synth().toDestination();
+
 // single page app, this controls which content appears, starting at page 0
 let currentPage = 0;
 
@@ -128,6 +131,16 @@ function pageDrawElement($page, el) {
                 audio.play();
             });
         }
+        if ('keyboard' in el) {
+            console.log(`image keyboard`);
+            const id = `keyboard${counter()}`;
+            $img.id = id;
+            $(`#${id}`).on('pointerdown', (e) => {
+                const xy = clickXYPercent($(`#${id}`).get(0), e);
+                console.log(`pointerdown ${id} ${xy.x} ${xy.y}`);
+                synth.triggerAttackRelease(keyboardNote(xy.x, xy.y), '8n');
+            });
+        }
     } else if ('draw' in el) {
         $div.classList.add('image-element');
         if (el.draw === 'input') {
@@ -149,6 +162,87 @@ function pageDrawElement($page, el) {
 
     if ('opacity' in el) {
         $div.style.opacity = el.opacity;
+    }
+}
+
+function clickXYPercent(el, ev) {
+    const r = el.getBoundingClientRect();
+    const scaleX = el.width / r.width;
+    const scaleY = el.height / r.height;
+    return {
+        x: ((ev.clientX - r.left) * scaleX) / r.width * 100,
+        y: ((ev.clientY - r.top) * scaleY) / r.height * 100
+    }
+}
+
+// table of xPercent coordinates for the right edge of each key
+// if a key is a sharp, it will only be on the upper keyboard
+// otherwise, the right edge is different between upper and lower
+// (due to the shape of the white piano keys)
+const keyboardTable = [
+    { note: 'C4', upper: 16.3, lower: 17.3 },
+    { note: 'C#4', upper: 18 },
+    { note: 'D4', upper: 19.3, lower: 19.6 },
+    { note: 'D#4', upper: 21 },
+    { note: 'E4', upper: 22, lower: 22 },
+    { note: 'F4', upper: 23.6, lower: 24.4 },
+
+    { note: 'F#4', upper: 25.3 },
+    { note: 'G4', upper: 26.2, lower: 27 },
+    { note: 'G#4', upper: 27.9 },
+    { note: 'A4', upper: 29, lower: 29.3 },
+    { note: 'A#4', upper: 30.4 },
+    { note: 'B4', upper: 31.6, lower: 31.6 },
+    { note: 'C5', upper: 33.1, lower: 34.1 },
+    { note: 'C#5', upper: 34.7 },
+    { note: 'D5', upper: 36, lower: 36.5 },
+    { note: 'D#5', upper: 37.7 },
+    { note: 'E5', upper: 38.8, lower: 38.8 },
+    { note: 'F5', upper: 40.6, lower: 41.3 },
+    { note: 'F#5', upper: 42.1 },
+    { note: 'G5', upper: 43.1, lower: 43.7 },
+    { note: 'G#5', upper: 44.7 },
+    // keyboard exits reality at this point...
+    { note: 'A5', upper: 46.1, lower: 46.1 },
+    { note: 'A#5', upper: 47.4, lower: 48.3 },
+    { note: 'B5', upper: 49 },
+    { note: 'C6', upper: 50.4, lower: 50.8 },
+    { note: 'C#6', upper: 51.9 },
+    { note: 'D6', upper: 54.5, lower: 55.1 },
+    { note: 'D#6', upper: 56 },
+    { note: 'E6', upper: 57.6, lower: 57.6 },
+    { note: 'F6', upper: 59.1, lower: 60 },
+    { note: 'F#6', upper: 60.7 },
+    { note: 'G6', upper: 61.6, lower: 62.3 },
+    { note: 'G#6', upper: 63.2 },
+    { note: 'A6', upper: 64.0, lower: 64.7 },
+    { note: 'A#6', upper: 65.8 },
+    { note: 'B6', upper: 67, lower: 67 },
+    { note: 'C7', upper: 70, lower: 70 },
+];
+
+function keyboardNote(xPercent, yPercent) {
+    if (xPercent < 15 || xPercent > 70) {
+        // off the left or right edge, outside the key area
+        return;
+    }
+
+    if (yPercent > 33 && yPercent < 40) {
+        // upper keyboard where the sharps are
+        for (const key of keyboardTable) {
+            if (xPercent < key.upper) {
+                console.log(`upper note ${key.note}`);
+                return key.note;
+            }
+        }
+    } else if (yPercent >= 40 && yPercent < 44) {
+        // lower keyboard, white keys only
+        for (const key of keyboardTable) {
+            if (xPercent < key.lower) {
+                console.log(`lower note ${key.note}`);
+                return key.note;
+            }
+        }
     }
 }
 

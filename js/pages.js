@@ -669,6 +669,7 @@ only musicians could make music.<br>
     },
     // page 23
     {
+        noSwipe: true,
         background: '#5ED4F778',
         elements: [
             {
@@ -676,6 +677,7 @@ only musicians could make music.<br>
                 image: 'keyboard.png',
                 alt: 'Keyboard',
                 transform: 'scale(1.3)',
+                keyboard: true,
             },
             {
                 area: '7 / 1',
@@ -702,9 +704,9 @@ only musicians could make music.<br>
                 transform: 'rotate(10deg) translate(110%, 30%)',
             },
             {
-                area: '2 / 1 / 10 / 10',
+                area: '2 / 1 / 4 / 10',
                 html: `
-Now it’s your turn to play some music -<br>
+Now it’s your turn to play some music<br>
 tap the keys and play anything you want.
 `,
             },
