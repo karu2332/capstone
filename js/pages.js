@@ -809,7 +809,7 @@ and amazing ideas.
         elements: [
             {
                 area: '1 / 1 / 10 / 10',
-                image: 'art_avenue_no_canvas.png',
+                image: 'art-avenue-01.png',
                 alt: 'Art Avenue',
                 opacity: 0.1,
                 transform: 'scale(1.3) translateY(-10%)',
@@ -848,6 +848,68 @@ and thick triangles.
             },
         ],
     },
+    // page 28
+    {
+        elements: [
+            {
+                area: '1 / 1 / 10 / 10',
+                image: 'art-avenue-01.png',
+                alt: 'Art Avenue',
+                opacity: 0.1,
+                transform: 'scale(3.7) translate(15%, -26%)',
+            },
+            {
+                area: '6 / 6',
+                image: 'blank_easel_02.png',
+                alt: 'Easel',
+                transform: 'scale(7)',
+            },
+            {
+                area: '6 / 2 / 10 / 10',
+                html: `
+Anyone who enters<br>
+Art Avenue must create<br>
+something of their own to add<br>
+to the collection of art.
+`,
+            },
+        ],
+    },
+    // page 29
+    {
+        elements: [
+            {
+                area: '1 / 1 / 10 / 10',
+                image: 'art_avenue.png',
+                alt: 'Art Avenue',
+                opacity: 0.1,
+                transform: 'scale(3.7) translate(6%, -26%)',
+            },
+            {
+                area: '6 / 7',
+                image: 'trace_sad.png',
+                alt: 'Sad Trace',
+                transform: 'scale(9)',
+            },
+            {
+                area: '2 / 2 / 10 / 10',
+                html: `
+Trace doesn’t think that he can<br>
+add anything to Art Avenue<br>
+becuase he has never drawn before.
+`,
+            },
+            {
+                area: '5 / 2 / 10 / 10',
+                html: `
+He remembers how Charlotte<br>
+thought he would never be able<br>
+to create anything when she<br>
+drew with him.
+`,
+            },
+        ],
+    },
     // page 30
     {
         noSwipe: true,
@@ -869,6 +931,22 @@ and thick triangles.
                 area: '1 / 4 / 10 / 10',
                 draw: 'input',
                 transform: 'scale(0.85)',
+            },
+            {
+                area: '2 / 2 / 10 / 10',
+                html: `
+Help Trace add<br>
+to Art Avenue.
+`,
+            },
+            {
+                area: '5 / 2 / 10 / 10',
+                html: `
+Use your<br>
+creativity to<br>
+draw anything<br>
+you can imagine!
+`,
             },
         ],
     },
