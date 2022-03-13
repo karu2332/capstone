@@ -469,18 +469,6 @@ Rock and Roll River!
             },
         ],
     },
-    // temporary page
-    {
-        elements: [
-            {
-                area: '3 / 3 / 10 / 10',
-                html: `
-The remaining pages are still in layout, and the story is not done yet.<br>
-The next few pages are to show how some of the interactions will work.
-`,
-            },
-        ],
-    },
     // page 18
     {
         noSwipe: true,
