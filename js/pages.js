@@ -933,14 +933,14 @@ drew with him.
                 transform: 'scale(0.85)',
             },
             {
-                area: '2 / 2 / 10 / 10',
+                area: '2 / 2 / 10 / 4',
                 html: `
 Help Trace add<br>
 to Art Avenue.
 `,
             },
             {
-                area: '5 / 2 / 10 / 10',
+                area: '5 / 2 / 10 / 4',
                 html: `
 Use your<br>
 creativity to<br>
@@ -955,8 +955,28 @@ you can imagine!
         showDrawing: true,
         elements: [
             {
-                area: '3 / 3 / 6 / 6',
+                area: '1 / 1 / 10 / 10',
+                image: 'art-avenue-01.png',
+                alt: 'Art Avenue',
+                opacity: 0.1,
+                transform: 'scale(3.7) translate(6%, -26%)',
+            },
+            {
+                area: '5 / 5',
+                image: 'blank_easel_02.png',
+                alt: 'Filled Easel',
+                transform: 'scale(7)',
+            },
+            {
+                area: '4 / 4 / 7 / 7',
                 draw: 'output',
+                transform: 'scale(1.01)',
+            },
+            {
+                area: '5 / 8',
+                image: 'happy_trace.png',
+                alt: 'Happy Trace',
+                transform: 'scale(9)',
             },
         ],
     },
