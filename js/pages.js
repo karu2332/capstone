@@ -730,6 +730,124 @@ dance too!
             },
         ],
     },
+    // page 24
+    {
+        background: '#FADB8778',
+        elements: [
+            {
+                area: '1 / 1 / 10 / 10',
+                image: 'cloud.png',
+                alt: 'Trace Thought Bubble',
+                transform: 'translate(-13%, 2%)',
+            },
+            {
+                area: '6 / 6 / 10 / 10',
+                html: `
+Bravo!
+`,
+            },
+            {
+                area: '7 / 6 / 10 / 10',
+                html: `
+You showed Trace anyone can<br>
+make music if they allow their<br>
+imagination to guide the way.
+`,
+            },
+        ],
+    },
+    // page 25
+    {
+        background: '#5ED4F778',
+        elements: [
+            {
+                area: '1 / 1 / 10 / 10',
+                image: 'train-grass.png',
+                alt: 'Train',
+                transform: 'scale(140%)',
+            },
+            {
+                area: '2 / 5 / 10 / 10',
+                html: `
+But Trace’s journey<br>
+isn’t over yet.
+`,
+            },
+            {
+                area: '3 / 8 / 10 / 10',
+                html: `
+Hop back on the<br>
+Inspiration Train<br>
+to Art Avenue.
+`,
+            },
+        ],
+    },
+    // page 26
+    {
+        background: '#5ED4F778',
+        elements: [
+            {
+                area: '1 / 1 / 10 / 10',
+                image: 'art_avenue.png',
+                alt: 'Art Avenue',
+                transform: 'scale(1.3)',
+            },
+            {
+                area: '2 / 2 / 10 / 10',
+                html: `
+Art Avenue is full<br>
+of bright colors<br>
+and amazing ideas.
+`,
+            },
+        ],
+    },
+    // page 27
+    {
+        background: '#5ED4F778',
+        elements: [
+            {
+                area: '1 / 1 / 10 / 10',
+                image: 'art_avenue_no_canvas.png',
+                alt: 'Art Avenue',
+                opacity: 0.1,
+                transform: 'scale(1.3) translateY(-10%)',
+            },
+            {
+                area: '1 / 1 / 10 / 10',
+                image: 'green_grass.png',
+                alt: 'Green Grass',
+                transform: 'scale(1.3) translateY(2%)',
+            },
+            {
+                area: '1 / 1 / 10 / 10',
+                image: 'sun.png',
+                alt: 'Orange Sun',
+                transform: 'scale(0.9) translate(-30%, -10%)',
+            },
+            {
+                area: '1 / 1 / 10 / 10',
+                image: 'clouds_group_2.png',
+                alt: 'Clouds',
+                transform: 'scale(0.7) translate(60%, -40%)',
+            },
+            {
+                area: '2 / 5 / 10 / 10',
+                html: `
+The sun is painted with yellow<br>
+and orange strokes.
+`,
+            },
+            {
+                area: '5 / 5 / 10 / 10',
+                html: `
+The grass is filled with sharp<br>
+and thick triangles.
+`,
+            },
+        ],
+    },
     // page 30
     {
         noSwipe: true,
