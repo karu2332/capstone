@@ -32,7 +32,7 @@ For Android:<br>
                 transform: 'translate(0, 8%)',
             },
             {
-                area: '1 / 1 / 4 / 9',
+                area: '2 / 1 / 4 / 9',
                 html: `
 At DayDream Elementary school,<br>
 the classrooms are filled with<br>
@@ -49,13 +49,13 @@ laughter, art, and imagination.
                 image: 'school_halfblueroad.png',
                 alt: 'School',
                 opacity: '0.4',
-                transform: 'translate(0, -10%)',
+                transform: 'scale(1.3) translate(0, -10%)',
             },
             {
-                area: '4 / 4 / 9 / 10',
+                area: '4 / 7 / 9 / 10',
                 image: 'charlotte_standing.png',
                 alt: 'Charlotte',
-                transform: 'scaleX(-1)',
+                transform: 'scale(2.5) scaleX(-1)',
             },
             {
                 area: '7 / 2 / 9 / 10',
@@ -76,7 +76,7 @@ and paint,<br> and create beautiful artwork.
                 transform: 'translate(10%, 10%) scale(1.5)',
             },
             {
-                area: '1 / 1 / 4 / 9',
+                area: '2 / 1 / 4 / 9',
                 html: `
 Everyday the kids use their markers,<br>
 and paint brushes,<br>
@@ -193,10 +193,10 @@ and gigantic galaxies.
               area: '1 / 1 / 10 / 10',
               image: 'trace_in_cornerdesk.png',
               alt: 'Trace Inside Desk',
-              transform: 'translate(39%, 0)',
+              transform: 'scale(2.4) translate(1%, 5%)',
             },
             {
-                area: '2 / 2 / 4 / 9',
+                area: '2 / 1 / 4 / 9',
                 html: `
 But there is another<br>
 pencil inside of Charlotte’s<br>
@@ -205,7 +205,7 @@ used before...
 `,
             },
             {
-                area: '6 / 2 / 10 / 10',
+                area: '6 / 1 / 10 / 10',
                 html: `
 ...and this<br>
 pencil’s name<br>
@@ -228,7 +228,7 @@ is Trace.
               area: '1 / 1 / 10 / 10',
               image: 'trace_crying_ondesk.png',
               alt: 'Trace Crying on Desk ',
-              transform: 'translate(-20%, -15%)',
+              transform: 'scale(1.4) translate(-8%, 4%)',
             },
             {
                 area: '9 / 9',
@@ -285,7 +285,7 @@ amazing art.
                 area: '1 / 1 / 10 / 10',
                 image: 'trace_back_corner.png',
                 alt: 'Trace in Back Corner of Desk',
-                transform: 'scale(2) translate(-2%, -11%)',
+                transform: 'scale(2) translate(-2%, 1%)',
             },
             {
                 area: '2 / 2 / 7 / 9',
@@ -307,7 +307,7 @@ and colored pencils.
                 area: '2 / 2 / 10 / 10',
                 image: 'trace_grey_confetti.png',
                 alt: 'Trace Surrounded with Grey Confetti',
-                transform: 'translate(-22%, -11%)',
+                transform: ' scale(1.8) translate(-18%, -8%)',
             },
             {
                 area: '5 / 7 / 10 / 10',
@@ -358,10 +358,10 @@ and colored pencils....
                 area: '1 / 1 / 8 / 10',
                 image: 'traceinfrontschool.png',
                 alt: 'School',
-                transform: 'scale(1.5) translate(-10%, 3%)',
+                transform: 'scale(2) translate(-2%, 8%)',
             },
             {
-                area: '3 / 4 / 10 / 10',
+                area: '3 / 5 / 10 / 10',
                 html: `
 Trace needs you to<br>
 join him on a journey<br>
