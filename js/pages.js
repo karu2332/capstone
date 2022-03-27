@@ -1175,4 +1175,33 @@ seen before.
             },
         ],
     },
+    // page 37
+    {
+        elements: [
+            {
+                area: '1 / 1 / 10 / 10',
+                image: 'story_street.png',
+                alt: 'Story Street',
+                opacity: 0.3,
+                transform: 'scale(2.6) translate(-20%, -10%)',
+            },
+            {
+              area: '6 / 3 / 10 / 10',
+              image: 'bookshelf_open_confetti.png',
+              alt: 'Story Street Bookshelf with Confetti',
+              transform: 'scale(2.8) translate(-22%, -10%)',
+            },
+            {
+                area: '4 / 7 / 10 / 10',
+                html: `
+They don't draw or<br>
+paint or make<br>
+music, but writing<br>
+uses just as much<br>
+imagination and<br>
+creativity!
+`,
+            },
+        ],
+    },
 ];
