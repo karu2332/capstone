@@ -1095,4 +1095,30 @@ Story Street.
             },
         ],
     },
+    // page 34
+    {
+        elements: [
+            {
+                area: '1 / 1 / 10 / 10',
+                image: 'story_street.png',
+                alt: 'Story Street',
+                opacity: 0.3,
+                transform: 'scale(2.6) translate(-11%, -9%)',
+            },
+            {
+              area: '5 / 7/ 10 / 10',
+              image: 'bookshelf.png',
+              alt: 'Story Street Bookshelf',
+              transform: 'scale(2.8) translate(-18%, -1%)',
+            },
+            {
+                area: '3 / 1 / 10 / 10',
+                html: `
+Story Street is full of all<br>
+different kinds of books with<br>
+creative writing.
+`,
+            },
+        ],
+    },
 ];
