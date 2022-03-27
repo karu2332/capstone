@@ -1121,4 +1121,32 @@ creative writing.
             },
         ],
     },
+    // page 35
+    {
+        elements: [
+            {
+                area: '1 / 1 / 10 / 10',
+                image: 'bookshelf.png',
+                alt: 'Story Street Bookshelf',
+                opacity: 0.1,
+                transform: 'scale(4.6) translate(-6%, 15%)',
+            },
+            {
+              area: '3 / 7/ 10 / 10',
+              image: 'open_book.png',
+              alt: 'Open Book',
+              transform: 'scale(3.3) translate(-12%, -5%)',
+            },
+            {
+                area: '2 / 1 / 10 / 10',
+                html: `
+Those living at story street use<br>
+their imagination to<br>
+write stories with<br>
+unique characters<br>
+and exciting plots.
+`,
+            },
+        ],
+    },
 ];
