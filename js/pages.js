@@ -1332,4 +1332,24 @@ and the otters.
             },
         ],
     },
+    // page 4
+    {
+        elements: [
+            {
+                area: '1 / 3 / 10 / 10',
+                image: 'charlotte_confetti.png',
+                alt: 'Charlotte Surrounded by Confetti',
+                transform: 'scale(1.5) translate(-2%, -3%)',
+            },
+            {
+                area: '2 / 2 / 5 / 10',
+                html: `
+It is within Charlotte,<br>
+and Penny,<br>
+and the other<br>
+art supplies!
+`,
+            },
+        ],
+    },
 ];
