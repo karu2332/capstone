@@ -1312,4 +1312,24 @@ EVERYONE!
             },
         ],
     },
+    // page 41
+    {
+        background: '#68B55678',
+        elements: [
+            {
+                area: '1 / 1 / 10 / 10',
+                image: 'river_confetti.png',
+                alt: 'River Confetti',
+                transform: 'scale(1.27)',
+            },
+            {
+                area: '2 / 7 / 10 / 10',
+                html: `
+It is within the gators,<br>
+and the fish,<br>
+and the otters.
+`,
+            },
+        ],
+    },
 ];
