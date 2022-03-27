@@ -1075,16 +1075,16 @@ for one more stop!
         background: '#78E06078',
         elements: [
             {
-                area: '4 / 2',
+                area: '4 / 2 / 10 / 10',
                 image: 'ticket_story_street.png',
                 alt: 'Story Street Train Ticket',
-                transform: 'scale(12) rotate(360deg) translate(25%, 15%)',
+                transform: 'scale(1.5) rotate(360deg) translate(-5%, -10%)',
             },
             {
-                area: '1 / 4',
+                area: '1 / 4 / 10 / 10',
                 image: 'ticket_story_street.png',
                 alt: 'Story Street Train Ticket',
-                transform: 'scale(10) rotate(360deg) translate(45%, -8%)',
+                transform: 'scale(1.2) rotate(360deg) translate(40%, -42%)',
             },
             {
                 area: '2 / 2 / 10 / 10',
@@ -1106,10 +1106,10 @@ Story Street.
                 transform: 'scale(2.6) translate(-11%, -9%)',
             },
             {
-              area: '5 / 7 / 10 / 10',
+              area: '5 / 7 / 8 / 10',
               image: 'bookshelf.png',
               alt: 'Story Street Bookshelf',
-              transform: 'scale(2.8) translate(-18%, -1%)',
+              transform: 'scale(2.8) translate(-18%, 11%)',
             },
             {
                 area: '3 / 1 / 10 / 10',
