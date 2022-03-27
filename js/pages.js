@@ -8,16 +8,73 @@ var pageTable = [
     {
         elements: [
             {
-                area: '3 / 3 / 10 / 10',
+                area: '1 / 1 / 10 / 10',
+                image: 'green_grass.png',
+                alt: 'Green Grass',
+                transform: 'scale(1.3) translateY(8%)',
+                opacity: '0.4',
+
+            },
+            {
+                area: '2 / 4 / 10 / 10',
                 html: `
-If you are viewing this from your browser,<br>
-we recommend installing this app:<br><br>
-For iOS:<br>
-1. Tap the Share button<br>
-2. Select "Add to Home Screen"<br><br>
-For Android:<br>
-1. Tap Settings<br>
-2. Select "Add to Home Screen"
+Download Make Your Mark on your<br>
+tablet before getting started!
+`,
+            },
+            {
+                area: '4 / 2',
+                html: `
+1.
+`,
+            },
+            {
+                area: '5 / 2',
+                image: 'ios_share.png',
+                alt: 'IOS Share Icon',
+            },
+            {
+                area: '6 / 2 / 10 / 10',
+                html: `
+Tap<br>
+'Share' button
+`,
+            },
+            {
+                area: '4 / 5',
+                html: `
+2.
+`,
+            },
+            {
+                area: '5 / 5',
+                image: 'add_home.png',
+                alt: 'Add Home Screen Icon',
+            },
+            {
+                area: '6 / 5 / 10 / 10',
+                html: `
+Choose<br>
+'Add to Home Screen'
+`,
+            },
+            {
+                area: '4 / 8',
+                html: `
+3.
+`,
+            },
+            {
+                area: '5 / 8',
+                image: 'icon.png',
+                alt: 'App Icon',
+            },
+            {
+                area: '6 / 8 / 10 / 10',
+                html: `
+Open<br>
+Make Your Mark<br>
+on your device!
 `,
             },
         ],
