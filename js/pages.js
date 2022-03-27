@@ -1070,4 +1070,29 @@ for one more stop!
             },
         ],
     },
+    // page 33
+    {
+        background: '#78E06078',
+        elements: [
+            {
+                area: '4 / 2',
+                image: 'ticket_story_street.png',
+                alt: 'Story Street Train Ticket',
+                transform: 'scale(12) rotate(360deg) translate(25%, 15%)',
+            },
+            {
+                area: '1 / 4',
+                image: 'ticket_story_street.png',
+                alt: 'Story Street Train Ticket',
+                transform: 'scale(10) rotate(360deg) translate(45%, -8%)',
+            },
+            {
+                area: '2 / 2 / 10 / 10',
+                html: `
+The last stop is<br>
+Story Street.
+`,
+            },
+        ],
+    },
 ];
