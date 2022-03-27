@@ -1106,7 +1106,7 @@ Story Street.
                 transform: 'scale(2.6) translate(-11%, -9%)',
             },
             {
-              area: '5 / 7/ 10 / 10',
+              area: '5 / 7 / 10 / 10',
               image: 'bookshelf.png',
               alt: 'Story Street Bookshelf',
               transform: 'scale(2.8) translate(-18%, -1%)',
@@ -1132,7 +1132,7 @@ creative writing.
                 transform: 'scale(4.6) translate(-6%, 15%)',
             },
             {
-              area: '3 / 7/ 10 / 10',
+              area: '3 / 7 / 10 / 10',
               image: 'open_book.png',
               alt: 'Open Book',
               transform: 'scale(3.3) translate(-12%, -5%)',
@@ -1145,6 +1145,32 @@ their imagination to<br>
 write stories with<br>
 unique characters<br>
 and exciting plots.
+`,
+            },
+        ],
+    },
+    // page 36
+    {
+        elements: [
+            {
+                area: '1 / 1 / 10 / 10',
+                image: 'bookshelf_openbook.png',
+                alt: 'Story Street Bookshelf',
+                opacity: 0.2,
+                transform: 'scale(3.8) translate(-3%, 13%)',
+            },
+            {
+              area: '5 / 2 / 10 / 10',
+              image: 'trace_surprised.png',
+              alt: 'Surprised Trace',
+              transform: 'translate(-25%, -38%)',
+            },
+            {
+                area: '2 / 2 / 10 / 10',
+                html: `
+They use their creativity in a<br>
+way that Trace has never<br>
+seen before.
 `,
             },
         ],
