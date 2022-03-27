@@ -1204,4 +1204,42 @@ creativity!
             },
         ],
     },
+    // page 38
+    {
+        elements: [
+            {
+                area: '1 / 1 / 10 / 10',
+                image: 'bookshelf_openbook.png',
+                alt: 'Story Street Bookshelf',
+                opacity: 0.2,
+                transform: 'scale(3.8) translate(-3%, 15%)',
+            },
+            {
+              area: '5 / 2 / 10 / 10',
+              image: 'happy_trace.png',
+              alt: 'Happy Trace',
+              transform: 'translate(-10%, -38%)',
+            },
+            {
+                area: '3 / 2 / 10 / 10',
+                html: `
+After traveling with Trace to<br>
+the Rock and Roll River,<br>
+and Art Avenue,<br>
+and Story Street...
+`,
+            },
+            {
+                area: '5 / 7 / 10 / 10',
+                html: `
+...you showed him<br>
+that creativity is<br>
+everywhere and<br>
+within everyone. Your<br>
+imagination is unique<br>
+to you!
+`,
+            },
+        ],
+    },
 ];
