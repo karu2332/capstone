@@ -1332,7 +1332,7 @@ and the otters.
             },
         ],
     },
-    // page 4
+    // page 42
     {
         elements: [
             {
@@ -1348,6 +1348,31 @@ It is within Charlotte,<br>
 and Penny,<br>
 and the other<br>
 art supplies!
+`,
+            },
+        ],
+    },
+    // page 43
+    {
+        elements: [
+            {
+                area: '1 / 1 / 8 / 10',
+                image: 'school_confetti_blueroad.png',
+                alt: 'School',
+                transform: 'scale(2.5) translate(-9%, 4%)',
+                opacity: 0.1,
+            },
+            {
+                area: '1 / 5 / 10 / 10',
+                image: 'happy_trace.png',
+                alt: 'Happy Trace',
+                transform: 'scale(1) translate(15%, 10%)',
+            },
+            {
+                area: '4 / 4 / 10 / 10',
+                html: `
+It is within Trace<br>
+and YOU!
 `,
             },
         ],
