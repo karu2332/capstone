@@ -1278,4 +1278,38 @@ wherever it takes you!
             },
         ],
     },
+    // page 40
+    {
+        elements: [
+            {
+                area: '1 / 1 / 10 / 10',
+                image: 'story_street.png',
+                alt: 'Story Street',
+                opacity: 0.1,
+                transform: 'scale(2.8) translate(-8%, -10%)',
+            },
+            {
+              area: '6 / 7 / 10 / 10',
+              image: 'bookshelf_trace.png',
+              alt: 'Story Street Bookshelf with Trace',
+              transform: 'scale(3.3) translate(-25%, -15%)',
+            },
+            {
+                area: '2 / 2 / 10 / 10',
+                html: `
+You did it!
+`,
+            },
+            {
+                area: '4 / 2 / 10 / 10',
+                html: `
+Trace now knows<br>
+that creativity was<br>
+always within him<br>
+because it is within<br>
+EVERYONE!
+`,
+            },
+        ],
+    },
 ];
