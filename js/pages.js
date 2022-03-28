@@ -1405,4 +1405,31 @@ the last stop!
             },
         ],
     },
+    // page 45
+    {
+        background: '#5ED4F778',
+        elements: [
+            {
+                area: '1 / 1 / 10 / 10',
+                image: 'everyone_train.png',
+                alt: 'Everyone on Train',
+                transform: 'scale(1.4) translate(2%, -3%)',
+            },
+            {
+                area: '2 / 4 / 10 / 10',
+                html: `
+The Inspiration Train<br>
+never runs out of stops.<br>
+`,
+            },
+            {
+                area: '3 / 4 / 10 / 10',
+                html: `
+STAY ABOARD and let<br>
+your creativity and<br>
+imagination guide you forever!
+`,
+            },
+        ],
+    },
 ];
