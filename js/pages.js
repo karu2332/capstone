@@ -1377,4 +1377,32 @@ and YOU!
             },
         ],
     },
+    // page 44
+    {
+        background: '#78E06078',
+        elements: [
+            {
+                area: '4 / 2 / 10 / 10',
+                image: 'ticket_school.png',
+                alt: 'School Train Ticket',
+                transform: 'scale(1.7) rotate(330deg) translate(5%, -15%)',
+            },
+            {
+                area: '2 / 2 / 10 / 10',
+                html: `
+Time to hop aboard the<br>
+Inspiration Train and bring<br>
+Trace back to Daydream<br>
+Elementary...
+`,
+            },
+            {
+                area: '8 / 7 / 10 / 10',
+                html: `
+...but this isn't<br>
+the last stop!
+`,
+            },
+        ],
+    },
 ];
