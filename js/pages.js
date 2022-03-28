@@ -1246,6 +1246,7 @@ to you!
     // page 39
     {
         noJump: true,
+        noSwipe: true,
         elements: [
             {
                 area: '1 / 1 / 10 / 10',
