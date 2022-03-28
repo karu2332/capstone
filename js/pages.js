@@ -6,6 +6,7 @@
 var pageTable = [
     // start page: page 0
     {
+        downloadBegin: true,
         elements: [
             {
                 area: '1 / 1 / 10 / 10',

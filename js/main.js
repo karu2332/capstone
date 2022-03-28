@@ -34,6 +34,7 @@ function navLeftClick(event) {
 // right nav...
 $('#right').on('click', navRightClick);
 $('#go-right').on('click', navRightClick);
+$('#download-begin').on('click', navRightClick);
 
 function navRightClick(event) {
     event.preventDefault();
@@ -279,10 +280,16 @@ function pageEnter(pageNum) {
     if ('goRight' in thisPage) {
         console.log('goRight');
         $('#right').hide();
+        $('#download-begin').hide();
         $('#go-right').show();
+    } else if ('downloadBegin' in thisPage) {
+        $('#right').hide();
+        $('#download-begin').show();
+        $('#go-right').hide();
     } else {
         $('#right').show();
         $('#go-right').hide();
+        $('#download-begin').hide();
     }
 }
 
