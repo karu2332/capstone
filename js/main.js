@@ -283,10 +283,12 @@ function pageEnter(pageNum) {
         $('#download-begin').hide();
         $('#go-right').show();
     } else if ('downloadBegin' in thisPage) {
+        console.log('downloadBegin');
         $('#right').hide();
         $('#download-begin').show();
         $('#go-right').hide();
     } else {
+        console.log('right');
         $('#right').show();
         $('#go-right').hide();
         $('#download-begin').hide();
@@ -329,6 +331,11 @@ if (searchParams.has('page')) {
 // for example, pressing 0 jumps to the first page
 document.addEventListener('keypress', function(event) {
     console.log(`keypress ${event.which}`);
+    const thisPage = pageTable[currentPage];
+    // check for properties that take effect every time we enter this page
+    if ('noJump' in thisPage) {
+        return;
+    }
     if (event.which >= 48 && event.which <= 57) {
         // digit
         jumpToPage(event.which - 48);

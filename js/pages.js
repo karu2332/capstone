@@ -1245,6 +1245,7 @@ to you!
     },
     // page 39
     {
+        noJump: true,
         elements: [
             {
                 area: '1 / 1 / 10 / 10',
@@ -1254,10 +1255,10 @@ to you!
                 transform: 'scale(3.8) translate(-3%, 15%)',
             },
             {
-              area: '1 / 1 / 10 / 10',
-              image: 'flat_book.png',
-              alt: 'Flat Book',
-              transform: 'translate(1%) scale(2)',
+                area: '1 / 1 / 10 / 10',
+                image: 'flat_book.png',
+                alt: 'Flat Book',
+                transform: 'translate(1%) scale(2)',
             },
             {
                 area: '3 / 2 / 10 / 10',
@@ -1275,6 +1276,12 @@ Trace or about<br>
 anything you want...<br>
 follow your imagination<br>
 wherever it takes you!
+`,
+            },
+            {
+                area: '3 / 6 / 8 / 9',
+                html: `
+<textarea spellcheck="false"></textarea>
 `,
             },
         ],
