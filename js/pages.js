@@ -56,7 +56,8 @@ Tap<br>
                 area: '6 / 5 / 10 / 10',
                 html: `
 Choose<br>
-'Add to Home Screen'
+'Add to<br>
+Home Screen'
 `,
             },
             {
@@ -74,8 +75,8 @@ Choose<br>
                 area: '6 / 8 / 10 / 10',
                 html: `
 Open<br>
-Make Your Mark<br>
-on your device!
+Make Your Mark on<br>
+your device!
 `,
             },
         ],
@@ -1299,8 +1300,8 @@ wherever it takes you!
             },
             {
               area: '6 / 7 / 10 / 10',
-              image: 'bookshelf_trace.png',
-              alt: 'Story Street Bookshelf with Trace',
+              image: 'flat_book.png',
+              alt: 'Story Street Story Book',
               transform: 'scale(3.3) translate(-25%, -15%)',
             },
             {
