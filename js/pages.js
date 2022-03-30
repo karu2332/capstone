@@ -37,8 +37,8 @@ tablet before getting started!
             {
                 area: '6 / 2 / 10 / 10',
                 html: `
-Tap<br>
-'Share' button
+<span style="font-size: .6em">Tap<br>
+'Share' button</span>
 `,
             },
             {
@@ -55,9 +55,9 @@ Tap<br>
             {
                 area: '6 / 5 / 10 / 10',
                 html: `
-Choose<br>
+<span style="font-size: .6em">Choose<br>
 'Add to<br>
-Home Screen'
+Home Screen'</span>
 `,
             },
             {
@@ -74,9 +74,9 @@ Home Screen'
             {
                 area: '6 / 8 / 10 / 10',
                 html: `
-Open<br>
+<span style="font-size: .6em">Open<br>
 Make Your Mark on<br>
-your device!
+your device!</span>
 `,
             },
         ],
@@ -1290,6 +1290,7 @@ wherever it takes you!
     },
     // page 40
     {
+        noSwipe: true,
         elements: [
             {
                 area: '1 / 1 / 10 / 10',
@@ -1299,19 +1300,25 @@ wherever it takes you!
                 transform: 'scale(2.8) translate(-8%, -10%)',
             },
             {
-              area: '6 / 7 / 10 / 10',
+              area: '6 / 6 / 10 / 10',
               image: 'flat_book.png',
               alt: 'Story Street Story Book',
-              transform: 'scale(3.3) translate(-25%, -15%)',
+              transform: 'scale(2.5) translate(-10%, -25%)',
             },
             {
-                area: '2 / 2 / 10 / 10',
+                area: '4 / 5 / 7 / 7',
+                html: `
+<span id="writing-output" style="font-family: 'Nunito', sans-serif; font-size: .5em; overflow-y: scroll"></span>
+`,
+            },
+            {
+                area: '2 / 1 / 10 / 5',
                 html: `
 You did it!
 `,
             },
             {
-                area: '4 / 2 / 10 / 10',
+                area: '4 / 1 / 10 / 5',
                 html: `
 Trace now knows<br>
 that creativity was<br>

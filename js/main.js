@@ -423,6 +423,11 @@ async function reloadJS() {
 // pre-draw all pages on start-up
 drawAllPages();
 
+// watch text area for changes
+$("textarea").on("input", function(e) {
+  $("#writing-output").html(e.target.value);
+});
+
 // show the first page
 pageEnter(currentPage);
 updateNavs();
