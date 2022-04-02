@@ -22,9 +22,15 @@
     <script src="js/simpleDraw.js"></script>
     <script src="js/Tone.js"></script>
     <script src="js/pages.js"></script>
+    <script src="js/jquery.waitforimages.min.js"></script>
 </head>
 <body>
-    <main>
+    <main id="loading-wrapper">
+      <h2 id="loading">
+        Loading...
+      </h2>
+    </main>
+    <main id="main" hidden>
         <section class="navcontainer">
             <nav id="left">
                 <img src="img/rewind.png" alt="Back">

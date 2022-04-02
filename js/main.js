@@ -428,6 +428,14 @@ $("textarea").on("input", function(e) {
   $("#writing-output").html(e.target.value);
 });
 
-// show the first page
-pageEnter(currentPage);
-updateNavs();
+// wait for images to finish loading
+$('#main').waitForImages(function() {
+    $('#loading-wrapper').remove();
+    // show the first page
+	pageEnter(currentPage);
+	updateNavs();
+    $('#main').removeAttr('hidden');
+}, function(loaded, count, success) {
+    $('#loading').html('Loading... ' +
+        Math.round(loaded / count * 100) + '%');
+}, true);

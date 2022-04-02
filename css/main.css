@@ -40,6 +40,12 @@ main {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+#loading {
+  align-self: center;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
 /* #content is the grid in the middle of the screen where pages are placed */
 #content {
     flex: 80%;
