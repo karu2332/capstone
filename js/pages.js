@@ -1134,10 +1134,10 @@ creative writing.
                 transform: 'scale(4.6) translate(-6%, 15%)',
             },
             {
-              area: '3 / 7 / 10 / 10',
+              area: '1 / 1 / 10 / 10',
               image: 'open_book.png',
               alt: 'Open Book',
-              transform: 'scale(3.3) translate(-12%, -5%)',
+              transform: 'translate(20%, 5%)',
             },
             {
                 area: '2 / 1 / 10 / 10',
