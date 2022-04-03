@@ -86,6 +86,24 @@ your device!</span>
         elements: [
             {
                 area: '1 / 1 / 10 / 10',
+                image: 'happy_trace.png',
+                alt: 'Happy Trace',
+                transform: 'translate(0, 8%)',
+            },
+            {
+                area: '1 / 1 / 10 / 10',
+                html: `
+Make Your Mark
+Authors: Skyler Hoeger, Claire O'Grady, & Katie Rudoff
+`,
+            },
+        ],
+    },
+    // page 2
+    {
+        elements: [
+            {
+                area: '1 / 1 / 10 / 10',
                 image: 'school_confetti_blueroad.png',
                 alt: 'School',
                 transform: 'translate(0, 8%)',
@@ -100,7 +118,7 @@ laughter, art, and imagination.
             },
         ],
     },
-    // page 2
+    // page 3
     {
         elements: [
             {
@@ -125,7 +143,7 @@ and paint,<br> and create beautiful artwork.
             },
         ],
     },
-    // page 3
+    // page 4
     {
         elements: [
             {
@@ -144,7 +162,7 @@ and crayons,<br>and colored pencils.
             },
         ],
     },
-    // page 4
+    // page 5
     {
         elements: [
             {
@@ -192,7 +210,7 @@ in the entire school.
             },
         ],
     },
-    // page 5
+    // page 6
     {
         elements: [
             {
@@ -226,7 +244,7 @@ of her drawings.
             },
         ],
     },
-    // page 6
+    // page 7
     {
         elements: [
             {
@@ -245,7 +263,7 @@ and gigantic galaxies.
             },
         ],
     },
-    // page 7
+    // page 8
     {
         elements: [
             {
@@ -273,7 +291,7 @@ is Trace.
             },
         ],
     },
-    // page 8
+    // page 9
     {
         elements: [
             {
@@ -309,7 +327,7 @@ other art supplies.
             },
         ],
     },
-    // page 9
+    // page 10
     {
         elements: [
             {
@@ -337,7 +355,7 @@ amazing art.
             },
         ],
     },
-    // page 10
+    // page 11
     {
         elements: [
             {
@@ -359,7 +377,7 @@ and colored pencils.
             },
         ],
     },
-    // page 11
+    // page 12
     {
         elements: [
             {
@@ -379,7 +397,7 @@ imagination anymore.
             },
         ],
     },
-    // page 12
+    // page 13
     {
         elements: [
             {
@@ -409,7 +427,7 @@ and colored pencils....
             },
         ],
     },
-    // page 13
+    // page 14
     {
         goRight: true,
         elements: [
@@ -431,7 +449,7 @@ always had!<br>
             },
         ],
     },
-    // page 14
+    // page 15
     {
         elements: [
             {
@@ -460,7 +478,7 @@ world for inspiration.
             },
         ],
     },
-    // page 15
+    // page 16
     {
         background: '#FADB8778',
         elements: [
@@ -483,7 +501,7 @@ and writing.
             },
         ],
     },
-    // page 16
+    // page 17
     {
         background: '#5ED4F778',
         elements: [
@@ -503,7 +521,7 @@ is explored at every stop.
             },
         ],
     },
-    // page 17
+    // page 18
     {
         background: '#78E06078',
         elements: [
@@ -528,7 +546,7 @@ Rock and Roll River!
             },
         ],
     },
-    // page 18
+    // page 19
     {
         noSwipe: true,
         background: '#AB5AED78',
@@ -626,7 +644,7 @@ Tap your favorite instrument!
             },
         ],
     },
-    // page 19
+    // page 20
     {
         background: '#68B55678',
         elements: [
@@ -646,7 +664,7 @@ favorite instruments.
             },
         ],
     },
-    // page 20
+    // page 21
     {
         background: '#68B55678',
         elements: [
@@ -672,7 +690,7 @@ all sing in harmony.
             },
         ],
     },
-    // page 21
+    // page 22
     {
         background: '#68B55678',
         elements: [
@@ -692,7 +710,7 @@ by all their friends.
             },
         ],
     },
-    // page 22
+    // page 23
     {
         elements: [
             {
@@ -726,7 +744,7 @@ only musicians could make music.<br>
             },
         ],
     },
-    // page 23
+    // page 24
     {
         noSwipe: true,
         background: '#5ED4F778',
@@ -779,7 +797,7 @@ dance too!
             },
         ],
     },
-    // page 24
+    // page 25
     {
         background: '#FADB8778',
         elements: [
@@ -805,7 +823,7 @@ imagination to guide the way.
             },
         ],
     },
-    // page 25
+    // page 26
     {
         background: '#5ED4F778',
         elements: [
@@ -832,7 +850,7 @@ to Art Avenue.
             },
         ],
     },
-    // page 26
+    // page 27
     {
         background: '#5ED4F778',
         elements: [
@@ -852,7 +870,7 @@ and amazing ideas.
             },
         ],
     },
-    // page 27
+    // page 28
     {
         background: '#5ED4F778',
         elements: [
@@ -897,7 +915,7 @@ and thick triangles.
             },
         ],
     },
-    // page 28
+    // page 29
     {
         elements: [
             {
@@ -924,7 +942,7 @@ to the collection of art.
             },
         ],
     },
-    // page 29
+    // page 30
     {
         elements: [
             {
@@ -959,7 +977,7 @@ drew with him.
             },
         ],
     },
-    // page 30
+    // page 31
     {
         noSwipe: true,
         elements: [
@@ -999,7 +1017,7 @@ you can imagine!
             },
         ],
     },
-    // page 31
+    // page 32
     {
         showDrawing: true,
         elements: [
@@ -1045,7 +1063,7 @@ believe in himself.
             },
         ],
     },
-    // page 32
+    // page 33
     {
         background: '#5ED4F778',
         elements: [
@@ -1072,7 +1090,7 @@ for one more stop!
             },
         ],
     },
-    // page 33
+    // page 34
     {
         background: '#78E06078',
         elements: [
@@ -1097,7 +1115,7 @@ Story Street.
             },
         ],
     },
-    // page 34
+    // page 35
     {
         elements: [
             {
@@ -1123,7 +1141,7 @@ creative writing.
             },
         ],
     },
-    // page 35
+    // page 36
     {
         elements: [
             {
@@ -1151,7 +1169,7 @@ and exciting plots.
             },
         ],
     },
-    // page 36
+    // page 37
     {
         elements: [
             {
@@ -1177,7 +1195,7 @@ seen before.
             },
         ],
     },
-    // page 37
+    // page 38
     {
         elements: [
             {
@@ -1206,7 +1224,7 @@ creativity!
             },
         ],
     },
-    // page 38
+    // page 39
     {
         elements: [
             {
@@ -1244,7 +1262,7 @@ to you!
             },
         ],
     },
-    // page 39
+    // page 40
     {
         noJump: true,
         noSwipe: true,
@@ -1288,7 +1306,7 @@ wherever it takes you!
             },
         ],
     },
-    // page 40
+    // page 41
     {
         noSwipe: true,
         elements: [
@@ -1329,7 +1347,7 @@ EVERYONE!
             },
         ],
     },
-    // page 41
+    // page 42
     {
         background: '#68B55678',
         elements: [
@@ -1349,7 +1367,7 @@ and the otters.
             },
         ],
     },
-    // page 42
+    // page 43
     {
         elements: [
             {
@@ -1369,7 +1387,7 @@ art supplies!
             },
         ],
     },
-    // page 43
+    // page 44
     {
         elements: [
             {
@@ -1394,7 +1412,7 @@ and YOU!
             },
         ],
     },
-    // page 44
+    // page 45
     {
         background: '#78E06078',
         elements: [
@@ -1422,7 +1440,7 @@ the last stop!
             },
         ],
     },
-    // page 45
+    // page 46
     {
         background: '#5ED4F778',
         elements: [

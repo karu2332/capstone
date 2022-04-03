@@ -10,6 +10,11 @@ const synth = new Tone.Synth().toDestination();
 // single page app, this controls which content appears, starting at page 0
 let currentPage = 0;
 
+// don't show instructions page after pwa is installed
+if (isInstalled()) {
+  currentPage = 1;
+}
+
 // look up frequently used elements
 const $main = document.getElementsByTagName('main')[0];
 const $left = document.getElementById('left');
@@ -21,8 +26,12 @@ const $content = document.getElementById('content');
 $('#left').on('click', navLeftClick);
 
 function navLeftClick(event) {
+    let firstPage = 0;
+    if (isInstalled()) {
+      firstPage = 1;
+    }
     event.preventDefault();
-    if (currentPage > 0) {
+    if (currentPage > firstPage) {
         pageExit(currentPage);
         currentPage--;
         pageEnter(currentPage);
@@ -36,17 +45,25 @@ function navLeftClick(event) {
 $('#right').on('click', navRightClick);
 $('#go-right').on('click', navRightClick);
 $('#download-begin').on('click', navRightClick);
+$('#go-home').on('click', navRightClick);
+
+
 
 function navRightClick(event) {
     event.preventDefault();
     if (currentPage < pageTable.length - 1) {
         pageExit(currentPage);
         currentPage++;
+        console.log(`next page ${currentPage}`);
         pageEnter(currentPage);
         updateNavs();
     } else {
         pageExit(currentPage);
         currentPage = 0;
+        if (isInstalled()) {
+          currentPage = 1;
+        }
+        console.log(`jumping to page ${currentPage}`);
         pageEnter(currentPage);
         updateNavs();
     }
@@ -424,6 +441,23 @@ async function reloadJS() {
     drawAllPages();
     pageEnter(currentPage);
     updateNavs();
+}
+
+// function that detects if pwa is installed
+// https://benborgers.com/posts/pwa-detect-installed
+function isInstalled() {
+  // For iOS
+  if (window.navigator.standalone) {
+    return true;
+  }
+
+  // For Android
+  if (window.matchMedia('(display-mode: standalone)').matches) {
+    return true;
+  }
+
+  // If neither is true, it's not installed
+  return false;
 }
 
 // pre-draw all pages on start-up
