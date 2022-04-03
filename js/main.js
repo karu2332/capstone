@@ -14,6 +14,7 @@ let currentPage = 0;
 const $main = document.getElementsByTagName('main')[0];
 const $left = document.getElementById('left');
 const $right = document.getElementById('right');
+const $home = document.getElementById('go-home');
 const $content = document.getElementById('content');
 
 // left nav...
@@ -44,7 +45,10 @@ function navRightClick(event) {
         pageEnter(currentPage);
         updateNavs();
     } else {
-        console.log('already at last page');
+        pageExit(currentPage);
+        currentPage = 0;
+        pageEnter(currentPage);
+        updateNavs();
     }
 }
 
@@ -57,8 +61,10 @@ function updateNavs() {
     }
     if (currentPage === pageTable.length - 1) {
         $right.style.opacity = 0;
+        $home.style.opacity = 1;
     } else {
         $right.style.opacity = 1;
+        $home.style.opacity = 0;
     }
 }
 
