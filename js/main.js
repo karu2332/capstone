@@ -71,7 +71,11 @@ function navRightClick(event) {
 
 // hide left nav on first page, right nav on last page
 function updateNavs() {
-    if (currentPage === 0) {
+    let firstPage = 0;
+    if (isInstalled()) {
+      firstPage = 1;
+    }
+    if (currentPage === firstPage) {
         $left.style.opacity = 0;
     } else {
         $left.style.opacity = 1;
