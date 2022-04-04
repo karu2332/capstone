@@ -153,7 +153,7 @@ and paint,<br> and create beautiful artwork.
                 transform: 'translate(10%, 10%) scale(1.5)',
             },
             {
-                area: '2 / 1 / 4 / 9',
+                area: '1 / 1 / 4 / 9',
                 html: `
 Everyday the kids use their markers,<br>
 and paint brushes,<br>
@@ -192,7 +192,7 @@ and crayons,<br>and colored pencils.
                 transform: 'scale(1.01)',
             },
             {
-                area: '2 / 2 / 5 / 10',
+                area: '2 / 1 / 5 / 10',
                 html: `
 Charlotte loves to draw with<br>
 her colorful markers<br>
@@ -201,7 +201,7 @@ prickly paint brushes.
 `,
             },
             {
-                area: '6 / 2 / 10 / 10',
+                area: '6 / 1 / 10 / 10',
                 html: `
 Her desk has the<br>
 most art supplies<br>
@@ -227,7 +227,7 @@ in the entire school.
                 transform: 'scale(2)',
             },
             {
-                area: '1 / 1 / 4 / 9',
+                area: '2 / 1 / 4 / 9',
                 html: `
 Every morning Charlotte<br>
 reaches for her favorite<br>
@@ -235,7 +235,7 @@ purple colored pencil, Penny.
 `,
             },
             {
-                area: '6 / 7 / 8 / 9',
+                area: '6 / 6 / 8 / 9',
                 html: `
 She uses Penny<br>
 in every single one<br>
@@ -365,7 +365,7 @@ amazing art.
                 transform: 'scale(1.7) translate(-2%, -10%)',
             },
             {
-                area: '2 / 2 / 7 / 9',
+                area: '2 / 1 / 7 / 9',
                 html: `
 Trace started to believe that<br>
 he would never be as creative as<br>
@@ -387,7 +387,7 @@ and colored pencils.
                 transform: ' scale(1.2) translate(-18%, -8%)',
             },
             {
-                area: '5 / 8 / 10 / 10',
+                area: '5 / 7 / 10 / 10',
                 html: `
 Trace feels like<br>
 he does not know<br>
@@ -638,7 +638,12 @@ Rock and Roll River!
             {
                 area: '2 / 2 / 3 / 10',
                 html: `
-Music is always being created at the  Rock and Roll River.<br>
+Music is always being created at the  Rock and Roll River.
+`,
+            },
+            {
+                area: '9 / 3 / 8 / 6',
+                html: `
 Tap your favorite instrument!
 `,
             },
@@ -701,7 +706,7 @@ all sing in harmony.
                 transform: 'scale(1.27)',
             },
             {
-                area: '2 / 8 / 10 / 10',
+                area: '2 / 7 / 10 / 10',
                 html: `
 The otters dance<br>
 to the music played<br>
@@ -735,7 +740,7 @@ so much music before.
 `,
             },
             {
-                area: '5 / 3 / 10 / 10',
+                area: '5 / 2 / 10 / 10',
                 html: `
 He always thought that<br>
 only musicians could make music.<br>
@@ -834,14 +839,14 @@ imagination to guide the way.
                 transform: 'scale(1.4) translate(2%, -3%)',
             },
             {
-                area: '2 / 5 / 10 / 10',
+                area: '2 / 4 / 10 / 10',
                 html: `
 But Trace’s journey<br>
 isn’t over yet.
 `,
             },
             {
-                area: '3 / 8 / 10 / 10',
+                area: '3 / 7 / 10 / 10',
                 html: `
 Hop back on the<br>
 Inspiration Train<br>
@@ -861,7 +866,7 @@ to Art Avenue.
                 transform: 'scale(1.3)',
             },
             {
-                area: '2 / 2 / 10 / 10',
+                area: '2 / 1 / 10 / 10',
                 html: `
 Art Avenue is full<br>
 of bright colors<br>
@@ -1074,7 +1079,7 @@ believe in himself.
                 transform: 'scale(1.4) translate(2%, -3%)',
             },
             {
-                area: '2 / 4 / 10 / 10',
+                area: '2 / 3 / 10 / 10',
                 html: `
 Great job helping Trace<br>
 find his imagination<br>
@@ -1241,7 +1246,7 @@ creativity!
               transform: 'translate(-10%, -38%)',
             },
             {
-                area: '3 / 2 / 10 / 10',
+                area: '2 / 2 / 10 / 10',
                 html: `
 After traveling with Trace to<br>
 the Rock and Roll River,<br>
@@ -1423,7 +1428,7 @@ and YOU!
                 transform: 'scale(1.7) rotate(330deg) translate(5%, -15%)',
             },
             {
-                area: '2 / 2 / 10 / 10',
+                area: '2 / 1 / 10 / 10',
                 html: `
 Time to hop aboard the<br>
 Inspiration Train and bring<br>
