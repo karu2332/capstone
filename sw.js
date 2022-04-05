@@ -82,6 +82,7 @@ const urlsToCache = [
     'imgtrace_surprised.png',
     'imgtraceinfrontschool.png',
     'imgtrain-grass.png',
+    'imgmake_your_mark.png',
 ];
 self.addEventListener('install', function(event) {
     event.waitUntil(

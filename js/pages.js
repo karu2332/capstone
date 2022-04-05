@@ -83,18 +83,17 @@ your device!</span>
     },
     // page 1
     {
+        background: '#FADB8778',
         elements: [
             {
                 area: '1 / 1 / 10 / 10',
-                image: 'happy_trace.png',
-                alt: 'Happy Trace',
-                transform: 'translate(0, 8%)',
+                image: 'make_your_mark.png',
+                alt: 'Make Your Mark Title',
             },
             {
-                area: '1 / 1 / 10 / 10',
+                area: '8 / 3 / 10 / 10',
                 html: `
-Make Your Mark
-Authors: Skyler Hoeger, Claire O'Grady, & Katie Rudoff
+By: Skyler Hoeger, Claire O'Grady, and Katie Rudoff
 `,
             },
         ],
