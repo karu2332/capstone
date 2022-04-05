@@ -90,12 +90,6 @@ your device!</span>
                 image: 'make_your_mark.png',
                 alt: 'Make Your Mark Title',
             },
-            {
-                area: '8 / 3 / 10 / 10',
-                html: `
-By: Skyler Hoeger, Claire O'Grady, and Katie Rudoff
-`,
-            },
         ],
     },
     // page 2
