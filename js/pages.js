@@ -790,7 +790,7 @@ tap the keys and play anything you want.
                 html: `
 Show Trace what’s possible and<br>
 give the Otters something to<br>
-dance too!
+dance to!
 `,
             },
         ],
