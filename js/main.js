@@ -18,8 +18,6 @@ if (isInstalled()) {
 // look up frequently used elements
 const $main = document.getElementsByTagName('main')[0];
 const $left = document.getElementById('left');
-const $right = document.getElementById('right');
-const $home = document.getElementById('go-home');
 const $content = document.getElementById('content');
 
 // left nav...
@@ -71,6 +69,7 @@ function navRightClick(event) {
 
 // hide left nav on first page, right nav on last page
 function updateNavs() {
+    const thisPage = pageTable[currentPage];
     let firstPage = 0;
     if (isInstalled()) {
       firstPage = 1;
@@ -81,11 +80,29 @@ function updateNavs() {
         $left.style.opacity = 1;
     }
     if (currentPage === pageTable.length - 1) {
-        $right.style.opacity = 0;
-        $home.style.opacity = 1;
+        console.log('goHome');
+        $('#right').hide();
+        $('#download-begin').hide();
+        $('#go-right').hide();
+        $('#go-home').show();
+    } else if ('goRight' in thisPage) {
+        console.log('goRight');
+        $('#right').hide();
+        $('#download-begin').hide();
+        $('#go-home').hide();
+        $('#go-right').show();
+    } else if ('downloadBegin' in thisPage) {
+        console.log('downloadBegin');
+        $('#right').hide();
+        $('#go-right').hide();
+        $('#go-home').hide();
+        $('#download-begin').show();
     } else {
-        $right.style.opacity = 1;
-        $home.style.opacity = 0;
+        console.log('right');
+        $('#go-right').hide();
+        $('#download-begin').hide();
+        $('#go-home').hide();
+        $('#right').show();
     }
 }
 
@@ -303,22 +320,6 @@ function pageEnter(pageNum) {
         document.body.style.background = thisPage.background;
     } else {
         document.body.style.background = "#f8f5ed";
-    }
-    if ('goRight' in thisPage) {
-        console.log('goRight');
-        $('#right').hide();
-        $('#download-begin').hide();
-        $('#go-right').show();
-    } else if ('downloadBegin' in thisPage) {
-        console.log('downloadBegin');
-        $('#right').hide();
-        $('#download-begin').show();
-        $('#go-right').hide();
-    } else {
-        console.log('right');
-        $('#right').show();
-        $('#go-right').hide();
-        $('#download-begin').hide();
     }
 }
 
